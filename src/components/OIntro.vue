@@ -4,8 +4,9 @@
       src="/images/barthy_mew-small.webp"
       alt="Barthy and his white Maine-Coon cat named Mew"
       title="Barthy & Mew the cat"
-      width="512px"
-      height="384px"
+      width="512"
+      height="384"
+      class="OIntro__img"
     />
 
     <TFlex
@@ -96,6 +97,13 @@
       text-align: start;
       flex-shrink: 1;
       flex-grow: 0;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+      max-width: 512px;
+      object-fit: contain;
     }
 
     &__links {

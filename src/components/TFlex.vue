@@ -23,15 +23,19 @@
 </script>
 
 <style lang="scss">
+  @use "../variables" as *;
+
   .TFlex {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: var(--spacer-md);
     width: 100%;
 
-    &[data-column] {
-      flex-direction: column;
+    &:not([data-column]) {
+      @include desktop() {
+        flex-direction: row;
+      }
     }
   }
 </style>
