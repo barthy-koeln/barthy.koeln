@@ -152,7 +152,7 @@
 
       <ul>
         <li>Support and assistance in a workshop for vocational rehabilitation</li>
-        <li>Production and documentation industrial components for Igus, Miele</li>
+        <li>Production and documentation of industrial component production for igus&reg; GmbH, Miele &amp; Cie. KG</li>
       </ul>
     </MCurriculumEntry>
 
@@ -164,7 +164,7 @@
         position="Abitur + Baccalauréat"
       />
 
-      <p>I acquired both the German and French graduations.</p>
+      <p>I acquired both the German and French graduations. Advanced courses in physics and french.</p>
     </MCurriculumEntry>
   </TFlex>
 </template>

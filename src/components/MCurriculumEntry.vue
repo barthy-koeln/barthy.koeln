@@ -25,6 +25,8 @@
 </script>
 
 <style lang="scss">
+  @use "../variables" as *;
+
   .MCurriculumEntry {
     flex-wrap: nowrap;
 
@@ -32,10 +34,19 @@
       display: flex;
       font-size: var(--fontsize-3);
       font-weight: bold;
-      width: 128px;
       position: sticky;
-      top: var(--spacer-md);
+      top: 0;
       height: 100%;
+      background-color: var(--color-background);
+      z-index: 100;
+      width: 100%;
+      padding: var(--spacer-md);
+
+      @include desktop() {
+        top: var(--spacer-md);
+        width: 128px;
+        padding: 0;
+      }
     }
   }
 </style>

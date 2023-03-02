@@ -12,6 +12,8 @@
       <li>Fast reading and understanding of documentation and forums</li>
       <li>The urge to learn it all</li>
       <li>Linting, code quality tools and package managers</li>
+      <li>Unit, integrations and functional testing</li>
+      <li>Reviews &amp; constructive criticism</li>
       <li>Accessibility and inclusivity considerations</li>
       <li>Website and XSS Security considerations</li>
       <li>Performance considerations</li>
@@ -19,7 +21,7 @@
     </ul>
 
     <h3>Core technologies</h3>
-    <strong>(senior)</strong>
+    <strong>Senior Level</strong>
     <ul>
       <li>Symfony</li>
       <li>Symfony API Platform</li>
@@ -33,7 +35,7 @@
       <li>GitLab CI/CD Platform</li>
     </ul>
 
-    <strong>(intermediate)</strong>
+    <strong>Intermediate Level</strong>
     <ul>
       <li>TypeScript <em>// but senior experience with strictly typed languages</em></li>
       <li>Three.js</li>
@@ -46,7 +48,7 @@
 
     <h3>Infrequent use only:</h3>
     <ul>
-      <li>Astro.build</li>
+      <li>Astro.build <em>// Always with Vue.js</em></li>
       <li>React Native</li>
       <li>Next.js</li>
       <li>Nuxt.js</li>
