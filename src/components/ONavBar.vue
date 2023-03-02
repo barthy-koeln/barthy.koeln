@@ -7,6 +7,7 @@
       height="33px"
       alt="barthy.koeln stylized logo in typical dark theme coding environment colors"
       title="barthy.koeln | Software Engineering"
+      loading="eager"
     />
     <div class="ONavBar__nav">
       <MNavList/>

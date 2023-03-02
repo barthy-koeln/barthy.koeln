@@ -7,6 +7,7 @@
       width="512"
       height="384"
       class="OIntro__img"
+      loading="eager"
     />
 
     <TFlex

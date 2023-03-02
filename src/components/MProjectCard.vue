@@ -9,6 +9,7 @@
       class="MProjectCard__image"
       :src="project.image"
       :alt="project.name"
+      loading="lazy"
     />
     <h3 class="MProjectCard__name">{{ project.name }}</h3>
   </a>
