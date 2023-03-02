@@ -1,0 +1,75 @@
+@use "variables" as *;
+
+:root {
+  --color-white: #dedede;
+  --color-black: #181818;
+  --color-background: #333;
+  --color-full: #cc7832;
+  --color-light: #eab868;
+  --color-accent: #9876aa;
+
+  --anim-duration: .35s;
+  --anim-easing: cubic-bezier(.25, .87, .58, 1);
+
+  --spacer-xs: .2rem;
+  --spacer-sm: .5rem;
+  --spacer: 1rem;
+  --spacer-md: 1.5rem;
+  --spacer-lg: 3rem;
+
+  --radius: .313rem;
+
+  --fontsize-1: 1.8rem;
+  --fontsize-2: 1.5rem;
+  --fontsize-3: 1.2rem;
+
+  @each $name, $value in $breakpoints {
+    --bp-#{$name}: #{$value};
+  }
+
+  --font-sans: Ubuntu, system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion) {
+  :root {
+    --anim-duration: 0;
+  }
+}
+
+*,
+*::before,
+*::after {
+  background: transparent;
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+html {
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  scroll-padding: var(--spacer-lg);
+}
+
+body {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: var(--color-background);
+  margin: 0;
+  padding: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity var(--anim-duration) var(--anim-easing);
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}

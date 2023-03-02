@@ -1,0 +1,38 @@
+<template>
+  <TFlex
+    column
+    class="OSelfDescription"
+  >
+    <p>
+      I’m a passionate software engineer and developer. I love to learn and focus on improving.<br>
+      My goal in any project is to create expandable, maintainable and efficient software.
+    </p>
+
+    <p>
+      Technology and computers are at the core of my work, life, and hobbies. I strive to be a part of open-source
+      development and technological progress.
+    </p>
+
+    <blockquote>
+      Respect the cognitive endurance of coworkers and your future self.
+      Clean-up, don't overcomplicate, aim for readability over brevity.<br>
+      <span>&mdash;&nbsp;Unknown</span>
+    </blockquote>
+  </TFlex>
+</template>
+
+<script lang="ts">
+  import { defineComponent } from 'vue'
+  import TFlex from './TFlex.vue'
+
+  export default defineComponent({
+    name: 'OSelfDescription',
+    components: { TFlex }
+  })
+</script>
+
+<style lang="scss">
+  .OSelfDescription {
+    font-size: 1.2rem;
+  }
+</style>
