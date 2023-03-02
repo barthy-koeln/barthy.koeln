@@ -7,6 +7,7 @@ import OFloatingNav from '../components/OFloatingNav.vue'
 import OLanguages from '../components/OLanguages.vue'
 import OCurriculum from '../components/OCurriculum.vue'
 import OFreelanceReferences from '../components/OFreelanceReferences.vue'
+import OTechStack from '../components/OTechStack.vue'
 import { NavLink } from '../types/website'
 
 const links: NavLink[] = [
@@ -21,6 +22,10 @@ const links: NavLink[] = [
   {
     label: 'Curriculum',
     target: 'curriculum'
+  },
+  {
+    label: 'Techstack',
+    target: 'techstack'
   },
   {
     label: 'Languages',
@@ -46,6 +51,8 @@ const links: NavLink[] = [
     <OCurriculum id="curriculum"/>
 
     <hr>
+
+    <OTechStack id="techstack"/>
 
     <OLanguages id="languages"/>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="OFloatingNav">
-    <ul class="OFloatingNav__list">
+    <ol class="OFloatingNav__list">
       <template
         v-for="link in links"
         :key="link.target"
@@ -9,7 +9,7 @@
           <a :href="`#${link.target}`">{{ link.label }}</a>
         </li>
       </template>
-    </ul>
+    </ol>
   </div>
 </template>
 

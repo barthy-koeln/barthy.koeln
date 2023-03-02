@@ -1,12 +1,12 @@
 <template>
-  <ul class="MNavList">
+  <ol class="MNavList">
     <template
       v-for="link in links"
       :key="link.target"
     >
       <ANavLink :link="link"/>
     </template>
-  </ul>
+  </ol>
 </template>
 
 <script lang="ts">
@@ -43,8 +43,6 @@
   .MNavList {
     display: flex;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 
     li {
       display: inline;

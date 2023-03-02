@@ -64,6 +64,78 @@ body {
   padding: 0;
 }
 
+h1 {
+  font-size: var(--fontsize-1);
+}
+
+h2 {
+  font-size: var(--fontsize-2);
+}
+
+h3, h4, h5, h6 {
+  font-size: var(--fontsize-3);
+}
+
+p {
+  line-height: 1.4;
+}
+
+hr {
+  width: 100%;
+  background: currentColor;
+  height: 1px;
+  opacity: .5;
+}
+
+blockquote {
+  padding-inline-start: var(--spacer-md);
+  padding-block: var(--spacer-sm);
+  border-left: 2px solid var(--color-accent);
+  font-style: italic;
+  max-width: 512px;
+}
+
+em {
+  font-family: monospace;
+  color: var(--color-light);
+  padding-inline-start: var(--spacer-sm);
+  font-style: normal;
+  letter-spacing: -1px;
+}
+
+mark {
+  background-color: var(--color-light);
+  color: var(--color-black);
+  padding: .2em;
+}
+
+i {
+  font-style: normal;
+  color: var(--color-accent);
+}
+
+a {
+  color: var(--color-light);
+  cursor: url("/icons/hand-pointer-duotone.svg") 16 4, pointer;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+  }
+
+  &[target="_blank"] {
+    cursor: url("/icons/external-link-square-duotone.svg") 16 16, pointer;
+  }
+}
+
+ul {
+  padding-inline-start: var(--spacer-lg);
+
+  li {
+    padding-block: var(--spacer-xs);
+  }
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity var(--anim-duration) var(--anim-easing);

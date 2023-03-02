@@ -37,13 +37,5 @@
       top: var(--spacer-md);
       height: 100%;
     }
-
-    ul {
-      padding-inline-start: var(--spacer-lg);
-
-      li {
-        padding-block: var(--spacer-xs);
-      }
-    }
   }
 </style>

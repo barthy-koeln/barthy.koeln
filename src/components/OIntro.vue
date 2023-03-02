@@ -31,7 +31,7 @@
 
       <hr>
 
-      <ul class="OIntro__links">
+      <ol class="OIntro__links">
         <template
           v-for="link in links"
           :key="link.target"
@@ -40,7 +40,7 @@
             <ASocialLink :link="link"/>
           </li>
         </template>
-      </ul>
+      </ol>
     </TFlex>
   </TFlex>
 </template>

@@ -185,9 +185,5 @@
   .OCurriculum {
     gap: var(--spacer-lg);
     padding-block: var(--spacer-md);
-
-    tr {
-      padding-block: var(--spacer-lg);
-    }
   }
 </style>
