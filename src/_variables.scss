@@ -1,15 +1,15 @@
 $breakpoints: (
- desktop: 1024px
+  desktop: 1024px
 );
 
-@mixin above($bp){
+@mixin above($bp) {
   @media (min-width: map-get($breakpoints, $bp)) {
-     @content;
+    @content;
   }
 }
 
 @mixin desktop {
-  @include above('desktop') {
+  @include above("desktop") {
     @content;
   }
 }

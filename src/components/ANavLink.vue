@@ -1,8 +1,8 @@
 <template>
   <a
-    class="ANavLink"
     :data-variant="link.label.toLowerCase()"
     :href="link.target"
+    class="ANavLink"
   >
     <span v-html="link.label"/>
   </a>

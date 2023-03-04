@@ -1,6 +1,9 @@
 <template>
   <TFlex class="MCurriculumEntry">
-    <div class="MCurriculumEntry__date">{{ date }}</div>
+    <div class="MCurriculumEntry__date">
+      {{ date }}
+    </div>
+
     <TFlex column>
       <slot/>
     </TFlex>
@@ -31,21 +34,21 @@
     flex-wrap: nowrap;
 
     &__date {
+      background-color: var(--color-background);
       display: flex;
       font-size: var(--fontsize-3);
       font-weight: bold;
+      height: 100%;
+      padding: var(--spacer-md);
       position: sticky;
       top: 0;
-      height: 100%;
-      background-color: var(--color-background);
-      z-index: 100;
       width: 100%;
-      padding: var(--spacer-md);
+      z-index: 100;
 
-      @include desktop() {
+      @include desktop {
+        padding: 0;
         top: var(--spacer-md);
         width: 128px;
-        padding: 0;
       }
     }
   }

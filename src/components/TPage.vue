@@ -17,19 +17,15 @@
 
   export default defineComponent({
     name: 'TPage',
-    components: { OFooter, ONavBar }
+    components: {
+      OFooter,
+      ONavBar 
+    }
   })
 </script>
 
 <style lang="scss">
   @use "../variables" as *;
-  @use "@fontsource/ubuntu/scss/mixins" as Ubuntu;
-
-  @include Ubuntu.fontFace(
-    $weight: 400,
-    $display: swap,
-    $unicodeMap: ("latin")
-  );
 
   .TPage {
     min-height: 100vh;

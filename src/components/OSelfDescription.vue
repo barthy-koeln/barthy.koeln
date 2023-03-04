@@ -1,10 +1,10 @@
 <template>
   <TFlex
-    column
     class="OSelfDescription"
+    column
   >
     <p>
-      I’m a passionate software engineer and developer. I love to learn and focus on improving.<br>
+      I&apos;m a passionate software engineer and developer. I love to learn and focus on improving.<br>
       My goal in any project is to create expandable, maintainable and efficient software.
     </p>
 
@@ -15,7 +15,8 @@
 
     <blockquote>
       Respect the cognitive endurance of coworkers and your future self.
-      Clean-up, don't overcomplicate, aim for readability over brevity.<br>
+      Clean-up, don&apos;t overcomplicate, aim for readability over brevity.<br>
+
       <span>&mdash;&nbsp;Unknown</span>
     </blockquote>
   </TFlex>

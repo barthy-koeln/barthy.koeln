@@ -1,28 +1,33 @@
 <template>
   <TFlex
-    column
     class="OLanguages"
+    column
   >
     <h2>Languages:</h2>
+
     <table>
       <tr>
         <td>French (native)</td>
-        <td><em>// born in France</em></td>
+
+        <td><AComment>born in France</AComment></td>
       </tr>
 
       <tr>
         <td>German (native)</td>
-        <td><em>// raised in Germany</em></td>
+
+        <td><AComment>raised in Germany</AComment></td>
       </tr>
 
       <tr>
-        <td>English (C1 / advanced)</td>
-        <td><em>// daily use in work environments since 2014</em></td>
+        <td>English (C1)</td>
+
+        <td><AComment>daily use in work environments since 2014</AComment></td>
       </tr>
 
       <tr>
         <td>Spanish (A1)</td>
-        <td><em>// dónde está la biblioteca</em></td>
+
+        <td><AComment>dónde está la biblioteca</AComment></td>
       </tr>
     </table>
   </TFlex>
@@ -30,10 +35,22 @@
 
 <script lang="ts">
   import { defineComponent } from 'vue'
+  import AComment from './AComment.vue'
   import TFlex from './TFlex.vue'
 
   export default defineComponent({
     name: 'OLanguages',
-    components: { TFlex }
+    components: {
+      AComment,
+      TFlex 
+    }
   })
 </script>
+
+<style lang="scss">
+  .OLanguages {
+    td {
+      width: 0;
+    }
+  }
+</style>

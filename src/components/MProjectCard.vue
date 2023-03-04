@@ -1,16 +1,17 @@
 <template>
   <a
     :href="project.link"
-    target="_blank"
-    rel="noopener"
     class="MProjectCard"
+    rel="noopener"
+    target="_blank"
   >
     <img
-      class="MProjectCard__image"
-      :src="project.image"
       :alt="project.name"
+      :src="project.image"
+      class="MProjectCard__image"
       loading="lazy"
-    />
+    >
+
     <h3 class="MProjectCard__name">{{ project.name }}</h3>
   </a>
 </template>
@@ -33,6 +34,8 @@
 
 <style lang="scss">
   .MProjectCard {
+    --name-scale: 1;
+
     align-items: center;
     display: flex;
     flex: 1 1 auto;
@@ -40,7 +43,6 @@
     gap: .5rem;
     max-width: 100%;
     text-decoration: none;
-    --name-scale: 1;
 
     &:hover {
       --name-scale: 1.1;
@@ -48,6 +50,7 @@
 
     &__image {
       display: flex;
+      max-width: 100%;
     }
 
     &__name {
@@ -58,8 +61,8 @@
       padding: 1rem 1rem 1rem 1.5rem;
       position: relative;
       text-align: center;
-      transition: transform var(--anim-duration) var(--anim-easing);
       transform: scale(var(--name-scale));
+      transition: transform var(--anim-duration) var(--anim-easing);
     }
   }
 </style>

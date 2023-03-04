@@ -1,19 +1,20 @@
 <template>
   <a
+    class="AGithubCTA"
     href="https://github.com/barthy-koeln"
     rel="nofollow noopener"
     target="_blank"
-    class="AGithubCTA"
   >
     <TFlex class="AGithubCTA__content">
       <img
-        src="/icons/github.svg"
+        alt=""
         class="AGithubCTA__icon"
-        width="64px"
         height="64px"
         loading="lazy"
-        alt=""
-      />
+        src="/icons/github.svg"
+        width="64px"
+      >
+
       <span>More on GitHub &raquo;</span>
     </TFlex>
   </a>
@@ -25,21 +26,22 @@
 
   export default defineComponent({
     name: 'AGithubCTA',
-    components: { TFlex }
+    components: {
+      TFlex
+    }
   })
 </script>
 
 <style lang="scss">
   .AGithubCTA {
-
     &__content {
-      background-color: var(--color-accent);
+      align-items: center;
+      background-color: var(--color-accent-dark);
       color: var(--color-light);
+      font-size: 2rem;
+      justify-content: flex-end;
       padding: var(--spacer-lg);
       width: 100%;
-      align-items: center;
-      justify-content: flex-end;
-      font-size: 2rem;
     }
 
     &__icon {

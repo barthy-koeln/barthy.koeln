@@ -8,8 +8,7 @@ import OLanguages from '../components/OLanguages.vue'
 import OCurriculum from '../components/OCurriculum.vue'
 import OFreelanceReferences from '../components/OFreelanceReferences.vue'
 import OTechStack from '../components/OTechStack.vue'
-import OArcsSection from '../components/OArcsSection.vue'
-import OScrollSnapSection from '../components/OScrollSnapSection.vue'
+import OOpenSourceSection from '../components/OOpenSourceSection.vue'
 import AGithubCTA from '../components/AGithubCTA.vue'
 import { NavLink } from '../types/website'
 
@@ -39,14 +38,17 @@ const links: NavLink[] = [
     target: 'freelance'
   },
   {
-    label: 'OPen Source',
+    label: 'Open Source',
     target: 'open-source'
   }
 ]
 ---
 
 <Layout>
-  <TFlex column={true}>
+  <TFlex
+    column={true}
+    spacious={true}
+  >
     <OFloatingNav links={links}/>
 
     <OIntro id="intro"/>
@@ -69,13 +71,7 @@ const links: NavLink[] = [
 
     <hr>
 
-    <h2 id="open-source">Open Source Projects</h2>
-
-    <OArcsSection/>
-
-    <hr>
-
-    <OScrollSnapSection/>
+    <OOpenSourceSection id="open-source"/>
 
     <hr>
 

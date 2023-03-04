@@ -1,22 +1,42 @@
 {
-	"name": "barthy-cv",
-	"type": "module",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview",
-		"astro": "astro"
-	},
-	"dependencies": {
-		"@astrojs/vue": "^2.0.1",
-		"@fontsource/ubuntu": "^4.5.11",
-		"astro": "^2.0.16",
-		"scroll-snap-slider": "^3.0.1",
-		"vue": "^3.2.47"
-	},
-	"devDependencies": {
-		"sass": "^1.58.3"
-	}
+  "name": "barthy-cv",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "lint": "eslint --fix src && stylelint --fix src",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/vue": "^2.0.1",
+    "@fontsource/ubuntu": "^4.5.11",
+    "astro": "^2.0.16",
+    "scroll-snap-slider": "^3.0.1",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/eslint-config-typescript": "^11.0.2",
+    "@vue/tsconfig": "^0.1.3",
+    "eslint": "^8.30.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "postcss": "^8.4.21",
+    "postcss-html": "^1.5.0",
+    "postcss-scss": "^4.0.6",
+    "sass": "^1.58.3",
+    "stylelint": "^15.2.0",
+    "stylelint-config-recommended-scss": "^9.0.1",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-order": "^6.0.2",
+    "typescript": "^4.9.5",
+    "vue-eslint-parser": "^9.1.0"
+  }
 }

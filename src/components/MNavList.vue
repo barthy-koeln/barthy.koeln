@@ -4,7 +4,9 @@
       v-for="link in links"
       :key="link.target"
     >
-      <ANavLink :link="link"/>
+      <li>
+        <ANavLink :link="link"/>
+      </li>
     </template>
   </ol>
 </template>

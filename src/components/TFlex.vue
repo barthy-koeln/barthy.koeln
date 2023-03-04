@@ -1,7 +1,8 @@
 <template>
   <div
-    class="TFlex"
     :data-column="column"
+    :data-spacious="spacious"
+    class="TFlex"
   >
     <slot/>
   </div>
@@ -17,6 +18,11 @@
       column: {
         type: Boolean,
         default: undefined
+      },
+
+      spacious: {
+        type: Boolean,
+        default: undefined
       }
     }
   })
@@ -26,16 +32,21 @@
   @use "../variables" as *;
 
   .TFlex {
+    --flex-gap: var(--spacer-md);
+
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: var(--spacer-md);
+    flex-flow: column wrap;
+    gap: var(--flex-gap);
     width: 100%;
 
     &:not([data-column]) {
-      @include desktop() {
+      @include desktop {
         flex-direction: row;
       }
+    }
+
+    &[data-spacious] {
+      --flex-gap: var(--spacer-xl);
     }
   }
 </style>

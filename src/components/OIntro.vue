@@ -1,33 +1,36 @@
 <template>
   <TFlex class="OIntro">
     <img
-      src="/images/barthy_mew-small.webp"
       alt="Barthy and his white Maine-Coon cat named Mew"
+      class="OIntro__img"
+      height="384"
+      loading="eager"
+      src="/images/barthy_mew-small.webp"
       title="Barthy & Mew the cat"
       width="512"
-      height="384"
-      class="OIntro__img"
-      loading="eager"
-    />
+    >
 
     <TFlex
-      column
       class="OIntro__content"
+      column
     >
       <h1>
         Barth&eacute;l&eacute;my&nbsp;Bonhomme<br>
+
         (Barthy <a
-        target="_blank"
-        ref="nofollow"
-        href="http://ipa-reader.xyz/?text=baa%CA%81ti&voice=Marlene"
-      >[baaʁti]</a>)
+          ref="nofollow"
+          href="http://ipa-reader.xyz/?text=baa%CA%81ti&voice=Marlene"
+          target="_blank"
+        >[baaʁti]</a>)
       </h1>
 
       <hr>
 
       <p>
-        Pronouns: He/Him (Er/Ihm)<br/>
+        Pronouns: He/Him (Er/Ihm)<br>
+
         Born in in the summer of 1994<br>
+
         Located in Köln &amp; Asbach (Westerwald)<br>
       </p>
 
@@ -95,22 +98,22 @@
     flex-wrap: nowrap;
 
     &__content {
-      text-align: start;
-      flex-shrink: 1;
       flex-grow: 0;
+      flex-shrink: 1;
+      text-align: start;
     }
 
     &__img {
-      width: 100%;
       height: auto;
       max-width: 512px;
       object-fit: contain;
+      width: 100%;
     }
 
     &__links {
-      list-style-type: none;
       display: flex;
       gap: var(--spacer-sm);
+      list-style-type: none;
     }
   }
 </style>

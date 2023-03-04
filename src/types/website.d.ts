@@ -12,3 +12,18 @@ export type ReferenceProject = {
   link: string,
   image: string,
 }
+
+export type OpenSourceProject = {
+  title: string,
+  demoLink: string,
+  githubLink: string,
+  paragraphs: string[],
+
+  image: {
+    alt: string,
+    width: number,
+    height: number,
+    src: string,
+    attribution?: string
+  }
+}

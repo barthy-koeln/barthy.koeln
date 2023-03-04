@@ -31,17 +31,17 @@
 
 <style lang="scss">
   .OFloatingNav {
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
     transform: translateX(calc(-100% - var(--spacer-lg)));
-    height: 100%;
 
     &__list {
       display: flex;
       flex-direction: column;
-      list-style-type: none;
       gap: var(--spacer-sm);
+      list-style-type: none;
       position: sticky;
       top: var(--spacer-lg)
     }

@@ -1,20 +1,21 @@
 <template>
   <TFlex
-    column
     class="OFreelanceReferences"
+    column
   >
-      <h2>Freelance Work & Projects</h2>
-      <p>Freelance-Projekte with custom Content-Management-System (CMS) written in Symfony PHP.</p>
+    <h2>Freelance Work & Projects</h2>
 
-      <TFlex>
-        <template
-          v-for="project in projects"
-          :key="project.name"
-        >
-          <MProjectCard :project="project"/>
-        </template>
-      </TFlex>
+    <p>Freelance projekts with custom Content-Management-System (CMS) written in Symfony PHP, Vue.js, and vanilla tools.</p>
+
+    <TFlex>
+      <template
+        v-for="project in projects"
+        :key="project.name"
+      >
+        <MProjectCard :project="project"/>
+      </template>
     </TFlex>
+  </TFlex>
 </template>
 
 <script lang="ts">

@@ -1,6 +1,7 @@
 <template>
   <h3 class="ACurriculumEntryTitle">
     <mark>{{ position }}</mark>
+
     <i class="ACurriculumEntryTitle__org">@ {{ organization }}</i>
   </h3>
 </template>
@@ -29,12 +30,13 @@
   @use "../variables" as *;
 
   .ACurriculumEntryTitle {
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: var(--spacer-xs);
     width: 100%;
 
-    @include desktop(){
+    @include desktop {
       flex-direction: row;
     }
   }

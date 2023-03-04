@@ -2,9 +2,12 @@
   <footer class="OFooter">
     <div class="OFooter__imprint">
       <p>Barth&eacute;l&eacute;my Bonhomme</p>
+
       <p>post@barthy.koeln</p>
+
       <p>+49&nbsp;176&nbsp;30&nbsp;59&nbsp;46&nbsp;43</p>
     </div>
+
     <p class="OFooter__hints">
       This site does not use cookies, tracking, logging,<br>or any other form of data storage.
     </p>
@@ -46,7 +49,6 @@
     }
 
     &__imprint {
-
       @include desktop {
         text-align: start;
       }

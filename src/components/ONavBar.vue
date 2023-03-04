@@ -1,14 +1,15 @@
 <template>
   <nav class="ONavBar">
     <img
-      class="ONavBar__logo"
-      src="/images/barthy_logo.svg"
-      width="256px"
-      height="33px"
       alt="barthy.koeln stylized logo in typical dark theme coding environment colors"
-      title="barthy.koeln | Software Engineering"
+      class="ONavBar__logo"
+      height="33px"
       loading="eager"
-    />
+      src="/images/barthy_logo.svg"
+      title="barthy.koeln | Software Engineering"
+      width="256px"
+    >
+
     <div class="ONavBar__nav">
       <MNavList/>
     </div>
