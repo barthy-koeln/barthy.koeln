@@ -32,7 +32,7 @@
       <h4>Project Types:</h4>
 
       <ul>
-        <li>Custom CMS for medium to big datasets</li>
+        <li>Custom CMS, SRM, CRM applications for medium to big datasets (Symfony, API Platform w/ JSON-LD, Vue.js 2, Vue.js 3)</li>
 
         <li>Platforms with user-generated content</li>
 

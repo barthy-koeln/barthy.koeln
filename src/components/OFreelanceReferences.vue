@@ -38,32 +38,62 @@
           {
             name: '3D-Darsteller',
             link: 'https://www.3d-darsteller.de',
-            image: '/images/3d-darsteller.webp'
+            image: {
+              alt: 'Eagle-eye perspective rendering of a old industrial building',
+              src: '/images/3d-darsteller.webp',
+              width: 500,
+              height: 256
+            }
           },
           {
             name: 'Display Vision International',
             link: 'https://displayvision.net/',
-            image: '/images/displayvision.webp'
+            image: {
+              alt: 'Elegant and modern trade fair booth with contemporary art',
+              src: '/images/displayvision.webp',
+              width: 500,
+              height: 256
+            }
           },
           {
             name: 'Ultramarin Badinstallation',
             link: 'https://www.ultramarin.de/',
-            image: '/images/ultramarin.webp'
+            image: {
+              alt: 'Elegant and modern designer bathroom in white with green nature accents',
+              src: '/images/ultramarin.webp',
+              width: 600,
+              height: 256
+            }
           },
           {
             name: 'THIRD EYE',
             link: 'https://third3ye.de/',
-            image: '/images/third-eye.webp'
+            image: {
+              alt: 'Red logo on black background, stylized "third eye" as "3YE"',
+              src: '/images/third-eye.webp',
+              width: 400,
+              height: 256
+            }
           },
           {
             name: 'Lucas Aritz | Graphic Design, etc.',
             link: 'https://lucasaritz.com/',
-            image: '/images/lucasaritz.webp'
+            image: {
+              alt: 'Abstract digital artwork of colorful pipes',
+              src: '/images/lucasaritz.webp',
+              width: 428,
+              height: 256
+            }
           },
           {
             name: 'keinegrenzen Festival 2019',
             link: 'https://festival2019.keinegrenzen.org/',
-            image: '/images/keinegrenzen.webp'
+            image: {
+              alt: 'Abstract digital artwork representing a festival poster',
+              src: '/images/keinegrenzen.webp',
+              width: 572,
+              height: 256
+            }
           }
         ] as ReferenceProject[]
       }

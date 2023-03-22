@@ -6,8 +6,10 @@
     target="_blank"
   >
     <img
-      :alt="project.name"
-      :src="project.image"
+      :alt="project.image.alt"
+      :src="project.image.src"
+      :width="project.image.width"
+      :height="project.image.width"
       class="MProjectCard__image"
       loading="lazy"
     >
@@ -51,6 +53,8 @@
     &__image {
       display: flex;
       max-width: 100%;
+      max-height: 256px;
+      height: auto;
     }
 
     &__name {

@@ -5,10 +5,11 @@
   >
     <h3>{{ project.title }}</h3>
 
-    <div>
+    <div class="MOpenSourceProject__imageWrapper">
       <a
         :href="project.demoLink"
         target="_blank"
+        class="MOpenSourceProject__imageLink"
       >
         <img
           :alt="project.image.alt"
@@ -67,10 +68,20 @@
 <style lang="scss">
   .MOpenSourceProject {
 
+    &__imageWrapper {
+      width: 100%;
+    }
+
+    &__imageLink {
+      display: block;
+      width: 100%;
+    }
+
     &__image {
       height: auto;
       width: 100%;
       border: 2px dashed var(--color-accent);
+      display: block;
     }
   }
 </style>

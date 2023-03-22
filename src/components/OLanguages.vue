@@ -49,7 +49,8 @@
 
 <style lang="scss">
   .OLanguages {
-    td {
+    td:first-child {
+      white-space: nowrap;
       width: 0;
     }
   }

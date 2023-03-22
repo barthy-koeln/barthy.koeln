@@ -1,0 +1,15 @@
+ul,
+table,
+hr,
+p,
+.ONavBar,
+.OLanguages,
+.OFloatingNav li:has([href="#languages"]),
+.OTechStack,
+.OFloatingNav li:has([href="#techstack"]),
+.MCurriculumEntry a,
+.MCurriculumEntry h4,
+.OFooter
+{
+  display: none !important;
+}

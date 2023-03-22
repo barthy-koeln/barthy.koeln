@@ -1,7 +1,7 @@
 ---
 import '../root.scss'
-import '@fontsource/ubuntu/latin-400.css';
-import '@fontsource/ubuntu/latin-700.css';
+import '@fontsource/ubuntu/latin-400.css'
+import '@fontsource/ubuntu/latin-700.css'
 import TPage from '../components/TPage.vue'
 
 export interface Props {
@@ -13,6 +13,10 @@ const {
   title = 'barthy.koeln',
   description = 'Software Engineering & Web Development'
 } = Astro.props
+
+const titleWithSuffix = title + ' · Software Engineering'
+const metaImageUrl = 'https://cv.barthy.koeln/images/meta-image.webp'
+const canonicalUrl = 'https://cv.barthy.koeln'
 ---
 
 <!DOCTYPE html>
@@ -32,16 +36,64 @@ const {
     />
 
     <meta
+      name="title"
+      content={titleWithSuffix}
+    >
+    <meta
       name="description"
       content={description}
     >
 
-    <title>{title} &middot; Software Engineering</title>
+    <meta
+      property="og:type"
+      content="website"
+    >
+    <meta
+      property="og:url"
+      content={canonicalUrl}
+    >
+    <meta
+      property="og:title"
+      content={titleWithSuffix}
+    >
+    <meta
+      property="og:description"
+      content={description}
+    >
+    <meta
+      property="og:image"
+      content={metaImageUrl}
+    >
+
+    <meta
+      property="twitter:card"
+      content="summary_large_image"
+    >
+    <meta
+      property="twitter:url"
+      content={canonicalUrl}
+    >
+    <meta
+      property="twitter:title"
+      content={titleWithSuffix}
+    >
+    <meta
+      property="twitter:description"
+      content={description}
+    >
+    <meta
+      property="twitter:image"
+      content={metaImageUrl}
+    >
+
+    <title>{titleWithSuffix}</title>
   </head>
 
   <body>
     <TPage>
       <slot/>
     </TPage>
+
+    <script src="../main.ts"/>
   </body>
 </html>

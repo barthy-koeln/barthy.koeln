@@ -7,10 +7,18 @@ export type SocialLink = NavLink & {
   icon: string
 }
 
+export type Image = {
+  alt: string,
+  width: number,
+  height: number,
+  src: string,
+  attribution?: string
+}
+
 export type ReferenceProject = {
   name: string,
   link: string,
-  image: string,
+  image: Image
 }
 
 export type OpenSourceProject = {
@@ -19,11 +27,5 @@ export type OpenSourceProject = {
   githubLink: string,
   paragraphs: string[],
 
-  image: {
-    alt: string,
-    width: number,
-    height: number,
-    src: string,
-    attribution?: string
-  }
+  image: Image
 }
