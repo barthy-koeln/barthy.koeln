@@ -29,7 +29,7 @@
       <p>
         Pronouns: He/Him (Er/Ihm)<br>
 
-        Born in in the summer of 1994<br>
+        Born in France in the summer of 1994<br>
 
         Located in Köln &amp; Asbach (Westerwald)<br>
       </p>
