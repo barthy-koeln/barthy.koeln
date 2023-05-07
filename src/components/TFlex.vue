@@ -1,7 +1,7 @@
 <template>
   <div
-    :data-column="column"
-    :data-spacious="spacious"
+    :data-column="column || undefined"
+    :data-spacious="spacious || undefined"
     class="TFlex"
   >
     <slot/>

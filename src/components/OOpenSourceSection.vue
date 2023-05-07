@@ -16,6 +16,8 @@
 </template>
 
 <script lang="ts" setup>
+  import TFlex from './TFlex.vue'
+  import MOpenSourceProject from "./MOpenSourceProject.vue"
   import type {OpenSourceProject} from '../types/website'
 
   const projects:  OpenSourceProject[] = [
