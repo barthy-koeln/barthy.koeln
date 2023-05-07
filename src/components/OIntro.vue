@@ -1,7 +1,7 @@
 <template>
   <TFlex class="OIntro">
     <img
-      alt="Barthy and his white Maine-Coon cat named Mew"
+      alt="Barthy and his white Maine-Coon and European Short-hair cat named Mew"
       class="OIntro__img"
       height="384"
       loading="eager"
@@ -50,47 +50,33 @@
   </TFlex>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue'
-  import type { SocialLink } from '../types/website'
+<script lang="ts" setup>
+  import type {SocialLink} from '../types/website'
   import ASocialLink from './ASocialLink.vue'
   import TFlex from './TFlex.vue'
 
-  export default defineComponent({
-    name: 'OIntro',
-
-    components: {
-      ASocialLink,
-      TFlex
+  const links: SocialLink[] = [
+    {
+      label: 'GitHub',
+      target: 'https://github.com/barthy-koeln',
+      icon: 'github'
     },
-
-    setup () {
-      return {
-        links: [
-          {
-            label: 'GitHub',
-            target: 'https://github.com/barthy-koeln',
-            icon: 'github'
-          },
-          {
-            label: 'Stack Overflow',
-            target: 'https://stackoverflow.com/users/3808452/barthy',
-            icon: 'stack-overflow'
-          },
-          {
-            label: 'Codepen',
-            target: 'https://codepen.io/barthy-koeln',
-            icon: 'codepen'
-          },
-          {
-            label: 'LinkedIn',
-            target: 'https://www.linkedin.com/in/barthy-bonhomme/',
-            icon: 'linkedin'
-          }
-        ] as SocialLink[]
-      }
+    {
+      label: 'Stack Overflow',
+      target: 'https://stackoverflow.com/users/3808452/barthy',
+      icon: 'stack-overflow'
+    },
+    {
+      label: 'Codepen',
+      target: 'https://codepen.io/barthy-koeln',
+      icon: 'codepen'
+    },
+    {
+      label: 'LinkedIn',
+      target: 'https://www.linkedin.com/in/barthy-bonhomme/',
+      icon: 'linkedin'
     }
-  })
+  ]
 </script>
 
 <style lang="scss">

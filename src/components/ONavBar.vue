@@ -16,14 +16,8 @@
   </nav>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue'
+<script lang="ts" setup>
   import MNavList from './MNavList.vue'
-
-  export default defineComponent({
-    name: 'ONavBar',
-    components: { MNavList }
-  })
 </script>
 
 <style lang="scss">

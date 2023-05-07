@@ -18,20 +18,12 @@
   </a>
 </template>
 
-<script lang="ts">
-  import { defineComponent, PropType } from 'vue'
-  import type { ReferenceProject } from '../types/website'
+<script lang="ts" setup>
+  import type {ReferenceProject} from '../types/website'
 
-  export default defineComponent({
-    name: 'MProjectCard',
-
-    props: {
-      project: {
-        type: Object as PropType<ReferenceProject>,
-        required: true
-      }
-    }
-  })
+  defineProps<{
+    project: ReferenceProject
+  }>()
 </script>
 
 <style lang="scss">

@@ -16,20 +16,12 @@
   </a>
 </template>
 
-<script lang="ts">
-  import { defineComponent, PropType } from 'vue'
-  import type { SocialLink } from '../types/website'
+<script lang="ts" setup>
+  import type {SocialLink} from '../types/website'
 
-  export default defineComponent({
-    name: 'ASocialLink',
-
-    props: {
-      link: {
-        type: Object as PropType<SocialLink>,
-        required: true
-      }
-    }
-  })
+  defineProps<{
+    link: SocialLink
+  }>()
 </script>
 
 <style lang="scss">

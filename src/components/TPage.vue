@@ -10,18 +10,9 @@
   </div>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue'
+<script lang="ts" setup>
   import OFooter from './OFooter.vue'
   import ONavBar from './ONavBar.vue'
-
-  export default defineComponent({
-    name: 'TPage',
-    components: {
-      OFooter,
-      ONavBar 
-    }
-  })
 </script>
 
 <style lang="scss">

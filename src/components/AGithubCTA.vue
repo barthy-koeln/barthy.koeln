@@ -20,16 +20,8 @@
   </a>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue'
+<script lang="ts" setup>
   import TFlex from './TFlex.vue'
-
-  export default defineComponent({
-    name: 'AGithubCTA',
-    components: {
-      TFlex
-    }
-  })
 </script>
 
 <style lang="scss">

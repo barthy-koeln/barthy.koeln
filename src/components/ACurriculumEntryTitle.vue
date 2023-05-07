@@ -6,24 +6,11 @@
   </h3>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue'
-
-  export default defineComponent({
-    name: 'ACurriculumEntryTitle',
-
-    props: {
-      position: {
-        type: String,
-        required: true
-      },
-
-      organization: {
-        type: String,
-        required: true
-      }
-    }
-  })
+<script lang="ts" setup>
+  defineProps<{
+    position: string,
+    organization: string
+  }>()
 </script>
 
 <style lang="scss">

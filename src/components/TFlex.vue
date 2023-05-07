@@ -8,24 +8,11 @@
   </div>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue'
-
-  export default defineComponent({
-    name: 'TFlex',
-
-    props: {
-      column: {
-        type: Boolean,
-        default: undefined
-      },
-
-      spacious: {
-        type: Boolean,
-        default: undefined
-      }
-    }
-  })
+<script lang="ts" setup>
+  defineProps<{
+    column?: boolean,
+    spacious?: boolean
+  }>()
 </script>
 
 <style lang="scss">

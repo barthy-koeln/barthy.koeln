@@ -33,18 +33,9 @@
   </TFlex>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue'
+<script lang="ts" setup>
   import AComment from './AComment.vue'
   import TFlex from './TFlex.vue'
-
-  export default defineComponent({
-    name: 'OLanguages',
-    components: {
-      AComment,
-      TFlex 
-    }
-  })
 </script>
 
 <style lang="scss">

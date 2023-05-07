@@ -11,34 +11,24 @@
   </ol>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue'
-  import type { NavLink } from '../types/website'
+<script lang="ts" setup>
+  import type {NavLink} from '../types/website'
   import ANavLink from './ANavLink.vue'
 
-  export default defineComponent({
-    name: 'MNavList',
-    components: { ANavLink },
-
-    setup () {
-      return {
-        links: [
-          {
-            label: 'Call',
-            target: 'tel:+4917630594643'
-          },
-          {
-            label: 'Write',
-            target: 'mailto:post@barthy.koeln'
-          },
-          {
-            label: 'Chat',
-            target: ' https://wa.me/4917630594643'
-          }
-        ] as NavLink[]
-      }
+  const links: NavLink[] = [
+    {
+      label: 'Call',
+      target: 'tel:+4917630594643'
+    },
+    {
+      label: 'Write',
+      target: 'mailto:post@barthy.koeln'
+    },
+    {
+      label: 'Chat',
+      target: ' https://wa.me/4917630594643'
     }
-  })
+  ]
 </script>
 
 <style lang="scss">

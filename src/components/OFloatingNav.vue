@@ -13,20 +13,12 @@
   </div>
 </template>
 
-<script lang="ts">
-  import { defineComponent, PropType } from 'vue'
-  import type { NavLink } from '../types/website'
+<script lang="ts" setup>
+  import type {NavLink} from '../types/website'
 
-  export default defineComponent({
-    name: 'OFloatingNav',
-
-    props: {
-      links: {
-        type: Array as PropType<NavLink[]>,
-        required: true
-      }
-    }
-  })
+  defineProps<{
+    links: NavLink[]
+  }>()
 </script>
 
 <style lang="scss">

@@ -45,24 +45,13 @@
   </TFlex>
 </template>
 
-<script lang="ts">
-  import { defineComponent, PropType } from 'vue'
-  import type { OpenSourceProject } from '../types/website'
+<script lang="ts" setup>
+  import type {OpenSourceProject} from '../types/website'
   import TFlex from './TFlex.vue'
 
-  export default defineComponent({
-    name: 'MOpenSourceProject',
-    components: {
-      TFlex
-    },
-
-    props: {
-      project: {
-        type: Object as PropType<OpenSourceProject>,
-        required: true
-      }
-    }
-  })
+  defineProps<{
+    project: OpenSourceProject
+  }>()
 </script>
 
 <style lang="scss">

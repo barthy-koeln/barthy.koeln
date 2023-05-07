@@ -10,21 +10,12 @@
   </TFlex>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue'
+<script lang="ts" setup>
   import TFlex from './TFlex.vue'
 
-  export default defineComponent({
-    name: 'MCurriculumEntry',
-    components: { TFlex },
-
-    props: {
-      date: {
-        type: String,
-        required: true
-      }
-    }
-  })
+  defineProps<{
+    date: string
+  }>()
 </script>
 
 <style lang="scss">

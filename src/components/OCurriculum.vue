@@ -5,7 +5,24 @@
   >
     <h2>Curriculum Vitae</h2>
 
-    <MCurriculumEntry date="since 2020">
+    <MCurriculumEntry date="since 05/2023">
+      <ACurriculumEntryTitle
+        organization="grandcentrix GmbH"
+        position="Senior Web Developer"
+      />
+
+      <h4>Responsibilities:</h4>
+
+      <ul>
+        <li>Requirements engineering</li>
+
+        <li>Frontend development</li>
+
+        <li>Unit, functional and E2E testing</li>
+      </ul>
+    </MCurriculumEntry>
+
+    <MCurriculumEntry date="2020–2023">
       <ACurriculumEntryTitle
         organization="VUCX GmbH"
         position="Head of Development"
@@ -202,20 +219,9 @@
   </TFlex>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue'
+<script lang="ts" setup>
   import AComment from './AComment.vue'
   import ACurriculumEntryTitle from './ACurriculumEntryTitle.vue'
   import MCurriculumEntry from './MCurriculumEntry.vue'
   import TFlex from './TFlex.vue'
-
-  export default defineComponent({
-    name: 'OCurriculum',
-    components: {
-      AComment,
-      ACurriculumEntryTitle,
-      TFlex,
-      MCurriculumEntry 
-    }
-  })
 </script>

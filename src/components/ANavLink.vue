@@ -8,20 +8,12 @@
   </a>
 </template>
 
-<script lang="ts">
-  import { defineComponent, PropType } from 'vue'
-  import type { NavLink } from '../types/website'
+<script lang="ts" setup>
+  import type {NavLink} from '../types/website'
 
-  export default defineComponent({
-    name: 'ANavLink',
-
-    props: {
-      link: {
-        type: Object as PropType<NavLink>,
-        required: true
-      }
-    }
-  })
+  defineProps<{
+    link: NavLink
+  }>()
 </script>
 
 <style lang="scss">
