@@ -24,10 +24,10 @@
 <style lang="scss">
   .OFloatingNav {
     height: 100%;
-    left: 0;
+    left: calc(-1 * var(--spacer-lg));
     position: absolute;
     top: 0;
-    transform: translateX(calc(-100% - var(--spacer-lg)));
+    transform: translateX(-100%);
 
     &__list {
       display: flex;

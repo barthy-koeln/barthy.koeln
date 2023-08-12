@@ -44,9 +44,9 @@
 
     &__image {
       display: flex;
-      max-width: 100%;
-      max-height: 256px;
       height: auto;
+      max-height: 256px;
+      max-width: 100%;
     }
 
     &__name {

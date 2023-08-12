@@ -56,7 +56,6 @@
 
 <style lang="scss">
   .MOpenSourceProject {
-
     &__imageWrapper {
       width: 100%;
     }
@@ -67,10 +66,10 @@
     }
 
     &__image {
-      height: auto;
-      width: 100%;
       border: 2px dashed var(--color-accent);
       display: block;
+      height: auto;
+      width: 100%;
     }
   }
 </style>
