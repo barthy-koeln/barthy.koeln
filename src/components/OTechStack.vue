@@ -38,9 +38,13 @@
     <ul>
       <li>Symfony <AComment>+ ecosystem, e.g. Doctrine, Twig, API Platform, …</AComment></li>
 
-      <li>Vue.js 2 + 3 <AComment>+ ecosystem, e.g. vuex, pinia, router, …</AComment></li>
+      <li>Vue.js 2 + 3 <AComment>+ ecosystem, e.g. pinia, router, …</AComment></li>
+
+      <li>TypeScript</li>
 
       <li>Vanilla JS since ES2016</li>
+
+      <li>Node.js</li>
 
       <li>SCSS with aBEM <AComment>leaning toward using as much native CSS as possible. Yay CSS variables!</AComment></li>
 
@@ -56,17 +60,19 @@
     <strong>Intermediate Level</strong>
 
     <ul>
-      <li>TypeScript <AComment>but senior experience with strictly typed languages</AComment></li>
-
       <li>Three.js</li>
 
       <li>React.js</li>
 
-      <li>Webpack, vite.js, rollup.js</li>
+      <li>Webpack, rollup.js</li>
 
       <li>Docker, docker-compose</li>
 
+      <li>GitHub Actions CI/CD</li>
+
       <li>GitLab CI/CD Platform</li>
+
+      <li>Terraform</li>
 
       <li>Secure cloud- and webhosting</li>
 
@@ -83,8 +89,6 @@
       <li>Next.js</li>
 
       <li>Nuxt.js</li>
-
-      <li>Terraform</li>
 
       <li>Python</li>
 
@@ -120,6 +124,6 @@
 </template>
 
 <script lang="ts" setup>
-  import AComment from './AComment.vue'
-  import TFlex from './TFlex.vue'
+import AComment from './AComment.vue'
+import TFlex from './TFlex.vue'
 </script>

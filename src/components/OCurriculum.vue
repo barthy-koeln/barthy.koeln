@@ -19,6 +19,10 @@
         <li>Frontend development</li>
 
         <li>Unit, functional and E2E testing</li>
+
+        <li>Interdisciplinary exchange and planning</li>
+
+        <li>Coaching and supporting junior developers</li>
       </ul>
     </MCurriculumEntry>
 
@@ -220,8 +224,8 @@
 </template>
 
 <script lang="ts" setup>
-  import AComment from './AComment.vue'
-  import ACurriculumEntryTitle from './ACurriculumEntryTitle.vue'
-  import MCurriculumEntry from './MCurriculumEntry.vue'
-  import TFlex from './TFlex.vue'
+import AComment from './AComment.vue'
+import ACurriculumEntryTitle from './ACurriculumEntryTitle.vue'
+import MCurriculumEntry from './MCurriculumEntry.vue'
+import TFlex from './TFlex.vue'
 </script>
