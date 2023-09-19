@@ -14,6 +14,8 @@
 
       <li>Fast reading and understanding of documentation and forums</li>
 
+      <li>Knowledge and experience across the full web technology stack</li>
+
       <li>The urge to learn it all</li>
 
       <li>Linting, code quality tools and package managers</li>
