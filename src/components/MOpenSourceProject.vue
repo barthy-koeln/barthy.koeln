@@ -41,15 +41,15 @@
     <a
       :href="project.githubLink"
       target="_blank"
-    >Github</a>
+    >GitHub</a>
   </TFlex>
 </template>
 
 <script lang="ts" setup>
-  import type {OpenSourceProject} from '../types/website'
-  import TFlex from './TFlex.vue'
+import type { OpenSourceProject } from '../types/website'
+import TFlex from './TFlex.vue'
 
-  defineProps<{
+defineProps<{
     project: OpenSourceProject
   }>()
 </script>

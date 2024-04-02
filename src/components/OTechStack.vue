@@ -66,6 +66,8 @@
 
       <li>React.js</li>
 
+      <li>Payload CMS (React / Node.js based)</li>
+
       <li>Webpack, rollup.js</li>
 
       <li>Docker, docker-compose</li>
@@ -84,9 +86,11 @@
     <h3>Infrequent Use Only</h3>
 
     <ul>
-      <li>Astro.build <AComment>Always with Vue.js</AComment></li>
+      <li>Astro.build</li>
 
       <li>React Native</li>
+
+      <li>Strapi CMS (React / Node.js based)</li>
 
       <li>Next.js</li>
 

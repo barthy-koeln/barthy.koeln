@@ -5,7 +5,7 @@
   >
     <h2>Freelance Work & Projects</h2>
 
-    <p>Freelance projekts with custom Content-Management-System (CMS) written in Symfony PHP, Vue.js, and vanilla tools.</p>
+    <p>Selection of publicly available freelance projects.</p>
 
     <TFlex>
       <template
@@ -19,11 +19,11 @@
 </template>
 
 <script lang="ts" setup>
-import type { ReferenceProject } from '../types/website'
-import MProjectCard from './MProjectCard.vue'
-import TFlex from './TFlex.vue'
+  import type { ReferenceProject } from '../types/website'
+  import MProjectCard from './MProjectCard.vue'
+  import TFlex from './TFlex.vue'
 
-const projects: ReferenceProject[] = [
+  const projects: ReferenceProject[] = [
     {
       name: 'Display Vision International',
       link: 'https://displayvision.net/',

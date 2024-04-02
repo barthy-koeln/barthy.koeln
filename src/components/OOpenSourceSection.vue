@@ -56,23 +56,40 @@ const projects:  OpenSourceProject[] = [
         'The goal is to not repeat myself when implementing simple sliders, but also not use one of the huge libraries out there.',
         'Technologies: TypeScript, ES Modules and Classes'
       ]
+    },
+    {
+      title: 'Experiment (WIP): Vue.js v3 + Three.js Animation',
+      githubLink: 'https://github.com/barthy-koeln/3d-scroll-experience',
+      demoLink: 'https://barthy-koeln.github.io/3d-scroll-experience/',
+
+      image: {
+        width: 1920,
+        height: 1080,
+        src: '/images/3d-scroll-experience.webp',
+        alt: 'An interactive 3D Environment with scrollable and clickable animations.'
+      },
+
+      paragraphs: [
+        'Scrubbing through a keyframed animation, exploration with WASD/Arrow keys controls, and orbit controls. Interaction and reactivity managed in Vue.js.',
+        'Technologies: Blender, Vue.js v3, Three.js'
+      ]
+    },
+    {
+      title: 'Experiment: Parametrized Canvas Animations',
+      githubLink: 'https://github.com/barthy-koeln/generative-lines',
+      demoLink: 'https://codepen.io/barthy-koeln/pen/rNjMwrK',
+
+      image: {
+        width: 1920,
+        height: 937,
+        src: '/images/generative-lines.webp',
+        alt: 'An interactive 3D Environment with scrollable and clickable animations.'
+      },
+
+      paragraphs: [
+        'Generate beautiful artworks using some well-defined parameters and a bit of randomness.',
+        'Technologies: JS, TWEEN.js'
+      ]
     }
-    // {
-    //   title: 'Experiment (WIP): Vue.js v3 + Three.js Animation',
-    //   githubLink: 'https://github.com/barthy-koeln/vinyl-experience',
-    //   demoLink: 'https://vinyl.barthy.koeln/',
-    //
-    //   image: {
-    //     width: 1920,
-    //     height: 1080,
-    //     src: '/images/vinyl.webp',
-    //     alt: 'A cosy 3D-Environment with a turntable and some vinyl.'
-    //   },
-    //
-    //   paragraphs: [
-    //     'Scrubbing through a keyframed animation, exploration with WASD/Arrow keys controls, and orbit controls. Interaction and reactivity managed in Vue.js.',
-    //     'Technologies: Blender, Vue.js v3, Three.js'
-    //   ]
-    // }
   ]
 </script>
