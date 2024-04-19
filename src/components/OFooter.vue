@@ -5,7 +5,7 @@
 
       <br>
 
-      This website is hosted on servers operated by GitHub&nbsp;Inc,&nbsp;88&nbsp;Colin&nbsp;P&nbsp;&nbsp;Jr&nbsp;St,&nbsp;San&nbsp;Francisco,&nbsp;CA&nbsp;94107,&nbsp;USA.<br>
+      This website is hosted on servers operated by GitHub&nbsp;Inc,&nbsp;88&nbsp;Colin&nbsp;P&nbsp;&nbsp;Jr&nbsp;St, San&nbsp;Francisco,&nbsp;CA&nbsp;94107,&nbsp;USA.<br>
 
       Therefore, please refer to the following documents:<br>
 
@@ -55,6 +55,10 @@
 
     @include desktop {
       flex-direction: row;
+    }
+
+    @media print {
+      display: none;
     }
 
     &__hints {

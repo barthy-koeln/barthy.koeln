@@ -9,6 +9,10 @@ $breakpoints: (
 }
 
 @mixin desktop {
+  @media print {
+    @content;
+  }
+
   @include above("desktop") {
     @content;
   }

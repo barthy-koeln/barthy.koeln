@@ -10,6 +10,7 @@ import OFreelanceReferences from '../components/OFreelanceReferences.vue'
 import OTechStack from '../components/OTechStack.vue'
 import OOpenSourceSection from '../components/OOpenSourceSection.vue'
 import AGithubCTA from '../components/AGithubCTA.vue'
+import QNoPrint from '../components/QNoPrint.vue'
 import { NavLink } from '../types/website'
 
 const links: NavLink[] = [
@@ -57,24 +58,42 @@ const links: NavLink[] = [
 
     <hr>
 
-    <OCurriculum id="curriculum"/>
+    <OCurriculum id="curriculum" primary={true}/>
 
-    <hr>
+    <QNoPrint>
+      <hr>
+
+      <div slot="yes">
+        <p>Barthy Bonhomme: page 2 of 3</p>
+      </div>
+    </QNoPrint>
+
+    <OCurriculum />
+
+    <QNoPrint>
+      <hr>
+
+      <div slot="yes">
+        <p>Barthy Bonhomme: page 3 of 3</p>
+      </div>
+    </QNoPrint>
 
     <OTechStack id="techstack"/>
 
     <OLanguages id="languages"/>
 
-    <hr>
+    <QNoPrint>
+      <hr>
 
-    <OFreelanceReferences id="freelance"/>
+      <OFreelanceReferences id="freelance"/>
 
-    <hr>
+      <hr>
 
-    <OOpenSourceSection id="open-source"/>
+      <OOpenSourceSection id="open-source"/>
 
-    <hr>
+      <hr>
 
-    <AGithubCTA/>
+      <AGithubCTA/>
+    </QNoPrint>
   </TFlex>
 </Layout>

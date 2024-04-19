@@ -3,7 +3,7 @@
     class="OLanguages"
     column
   >
-    <h2>Languages:</h2>
+    <h2>Languages</h2>
 
     <table>
       <tr>

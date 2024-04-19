@@ -30,7 +30,7 @@
       align-items: center;
       background-color: var(--color-accent-dark);
       color: var(--color-light);
-      font-size: 2rem;
+      font-size: var(--fontsize-1);
       justify-content: flex-end;
       padding: var(--spacer-lg);
       width: 100%;

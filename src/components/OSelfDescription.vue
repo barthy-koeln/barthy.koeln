@@ -4,11 +4,6 @@
     column
   >
     <p>
-      I&apos;m a passionate software engineer and developer. I love to learn and focus on improving.<br>
-      My goal in any project is to create expandable, maintainable and efficient software.
-    </p>
-
-    <p>
       Technology and computers are at the core of my work, life, and hobbies. I strive to be a part of open-source
       development and technological progress.
     </p>
@@ -28,6 +23,6 @@
 
 <style lang="scss">
   .OSelfDescription {
-    font-size: 1.2rem;
+    font-size: var(--fontsize-3);
   }
 </style>

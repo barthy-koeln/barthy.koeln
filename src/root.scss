@@ -14,18 +14,32 @@
   --spacer-sm: 0.5rem;
   --spacer: 1rem;
   --spacer-md: 1.5rem;
-  --spacer-lg: 3rem;
+  --spacer-lg: 2rem;
   --spacer-xl: 5rem;
   --radius: 0.313rem;
   --fontsize-1: 1.8rem;
   --fontsize-2: 1.5rem;
   --fontsize-3: 1.2rem;
+  --fontsize-4: 1rem;
 
   @each $name, $value in $breakpoints {
     --bp-#{$name}: #{$value};
   }
 
   --font-sans: ubuntu, system-ui, sans-serif;
+}
+
+@media print {
+  :root {
+    --fontsize-1: 18pt;
+    --fontsize-2: 15pt;
+    --fontsize-3: 12pt;
+    --fontsize-4: 10pt;
+    --spacer: 10pt;
+    --spacer-md: 12pt;
+    --spacer-lg: 18pt;
+    --spacer-xl: 26pt;
+  }
 }
 
 @media (prefers-reduced-motion) {
@@ -46,6 +60,7 @@
 }
 
 html {
+  font: -apple-system-body;
   font-family: var(--font-sans);
   scroll-behavior: smooth;
   scroll-padding: var(--spacer-lg);
@@ -53,7 +68,7 @@ html {
 
 body {
   background: var(--color-background);
-  font-size: 16px;
+  font-size: var(--fontsize-4);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
@@ -61,6 +76,12 @@ body {
   padding: 0;
   text-rendering: optimizelegibility;
 }
+
+@page {
+  margin: 0;
+  size: a4;
+}
+
 
 h1 {
   font-size: var(--fontsize-1);
@@ -110,6 +131,7 @@ i {
 a {
   color: var(--color-light);
   cursor: url("/icons/hand-pointer-duotone.svg") 16 4, pointer;
+  text-underline-offset: 3px;
 
   &:hover {
     text-decoration: underline;

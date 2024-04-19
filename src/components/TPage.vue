@@ -35,6 +35,10 @@
       @include desktop {
         padding: 4rem 0;
       }
+
+      @media print {
+        padding: var(--spacer-lg);
+      }
     }
   }
 </style>

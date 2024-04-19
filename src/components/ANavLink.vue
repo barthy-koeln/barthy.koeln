@@ -9,7 +9,7 @@
 </template>
 
 <script lang="ts" setup>
-  import type {NavLink} from '../types/website'
+  import type { NavLink } from '../types/website'
 
   defineProps<{
     link: NavLink
@@ -20,14 +20,14 @@
   .ANavLink {
     color: var(--color-accent);
     font-family: monospace;
-    font-size: 1rem;
+    font-size: var(--fontsize-4);
     padding: .5rem;
     position: relative;
     text-decoration: none;
     text-transform: lowercase;
 
-    @media (min-width: 1024px) {
-      font-size: 1.5rem;
+    @media (width >= 1024px) {
+      font-size: var(--fontsize-2);
       padding: 1rem;
     }
 

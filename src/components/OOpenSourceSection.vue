@@ -16,11 +16,11 @@
 </template>
 
 <script lang="ts" setup>
-import TFlex from './TFlex.vue'
-import MOpenSourceProject from './MOpenSourceProject.vue'
-import type { OpenSourceProject } from '../types/website'
+  import TFlex from './TFlex.vue'
+  import MOpenSourceProject from './MOpenSourceProject.vue'
+  import type { OpenSourceProject } from '../types/website'
 
-const projects:  OpenSourceProject[] = [
+  const projects:  OpenSourceProject[] = [
     // {
     //   title: 'Arbitrary Remote Control System (ARCS)',
     //   githubLink: 'https://github.com/arcs-vr',

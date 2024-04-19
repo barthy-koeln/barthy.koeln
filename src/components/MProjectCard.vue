@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts" setup>
-  import type {ReferenceProject} from '../types/website'
+  import type { ReferenceProject } from '../types/website'
 
   defineProps<{
     project: ReferenceProject
@@ -51,7 +51,7 @@
 
     &__name {
       display: flex;
-      font-size: 1.4rem;
+      font-size: var(--fontsize-2);
       line-height: 1;
       margin: auto;
       padding: 1rem 1rem 1rem 1.5rem;

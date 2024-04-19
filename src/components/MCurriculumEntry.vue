@@ -41,6 +41,12 @@
         top: var(--spacer-md);
         width: 128px;
       }
+
+      @media print {
+        left: unset;
+        position: relative;
+        top: unset;
+      }
     }
   }
 </style>

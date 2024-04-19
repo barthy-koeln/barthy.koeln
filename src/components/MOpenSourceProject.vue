@@ -46,10 +46,10 @@
 </template>
 
 <script lang="ts" setup>
-import type { OpenSourceProject } from '../types/website'
-import TFlex from './TFlex.vue'
+  import type { OpenSourceProject } from '../types/website'
+  import TFlex from './TFlex.vue'
 
-defineProps<{
+  defineProps<{
     project: OpenSourceProject
   }>()
 </script>

@@ -36,6 +36,10 @@
       flex-direction: row;
     }
 
+    @media print {
+      display: none;
+    }
+
     &__logo {
       max-width: 50vw;
     }

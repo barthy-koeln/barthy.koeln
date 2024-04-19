@@ -1,5 +1,6 @@
 <template>
   <TFlex
+    v-if="primary"
     class="OCurriculum"
     column
   >
@@ -17,6 +18,8 @@
         <li>Requirements engineering</li>
 
         <li>Frontend development</li>
+
+        <li>UX thinking & conception</li>
 
         <li>Unit, functional and E2E testing</li>
 
@@ -39,7 +42,7 @@
 
         <li>Coaching of junior and intermediate level developers<br>(team of 2-3 + external freelancers)</li>
 
-        <li>Consulting of Clients and third-party agencies</li>
+        <li>Consulting of clients and third-party agencies</li>
 
         <li>Full-stack development</li>
 
@@ -50,42 +53,46 @@
         <li>Sysadmin duties</li>
       </ul>
 
-      <h4>Project Types:</h4>
+      <QNoPrint>
+        <h4>Project Types:</h4>
 
-      <ul>
-        <li>Custom CMS, SRM, CRM applications for medium to big datasets (Symfony, API Platform w/ JSON-LD, Vue.js 2, Vue.js 3)</li>
+        <ul>
+          <li>Custom CMS, SRM, CRM applications for medium to big datasets (Symfony, API Platform w/ JSON-LD, Vue.js&nbsp;2, Vue.js&nbsp;3)</li>
 
-        <li>Platforms with user-generated content</li>
+          <li>Website & Hybrid App development (Android + iOS, Headless CMS + React & React Native, GraphQL)</li>
 
-        <li>APIs and search engines</li>
+          <li>Multi-Tenant/Multi-Instance platforms with user-generated content</li>
 
-        <li>Landing pages and design implementations</li>
+          <li>APIs and search engines</li>
 
-        <li>Hybrid app development</li>
-      </ul>
+          <li>Landing pages and design implementations</li>
+        </ul>
 
-      <a
-        ref="noopener"
-        href="https://www.vucx.de/en/worx"
-        target="_blank"
-      >View References</a>
+        <a
+          ref="noopener"
+          href="https://www.vucx.de/en/worx"
+          target="_blank"
+        >View References</a>
+      </QNoPrint>
 
       <hr>
 
       <ACurriculumEntryTitle
         organization="Freelance"
-        position="Web Developer"
+        position="Web Development"
       />
 
-      <ul>
-        <li>Consulting</li>
+      <QNoPrint>
+        <ul>
+          <li>Consulting</li>
 
-        <li>3D and VR hosting solutions</li>
+          <li>3D and VR hosting solutions</li>
 
-        <li>Hosting & maintenance</li>
-      </ul>
+          <li>Hosting & maintenance</li>
+        </ul>
 
-      <a href="#freelance">View References</a>
+        <a href="#freelance">View References</a>
+      </QNoPrint>
 
       <hr>
 
@@ -94,22 +101,36 @@
         position="Open Source Development"
       />
 
-      <ul>
-        <li>Remote Control System for Interactive Web-3D and Web-XR</li>
+      <QNoPrint>
+        <ul>
+          <li>Remote Control System for Interactive Web-3D and Web-XR</li>
 
-        <li>Symfony Bundles</li>
+          <li>Symfony Bundles</li>
 
-        <li>JS Libraries</li>
-      </ul>
+          <li>JS Libraries</li>
+        </ul>
 
-      <a
-        href="https://github.com/barthy-koeln"
-        rel="nofollow"
-        target="_blank"
-      >View References</a>
+        <a
+          href="https://github.com/barthy-koeln"
+          rel="nofollow"
+          target="_blank"
+        >View References</a>
+      </QNoPrint>
     </MCurriculumEntry>
+  </TFlex>
 
-    <hr>
+  <TFlex
+    v-else
+    class="OCurriculum"
+    column
+  >
+    <QNoPrint>
+      <template #yes>
+        <h2 class="OCurriculum__break">
+          Curriculum (Continuation)
+        </h2>
+      </template>
+    </QNoPrint>
 
     <MCurriculumEntry date="2014–2020">
       <ACurriculumEntryTitle
@@ -121,13 +142,13 @@
         <tr>
           <td>Degree program:</td>
 
-          <td>Technishe Informatik <AComment>Technical computer science</AComment></td>
+          <td>Technical computer science</td>
         </tr>
 
         <tr>
           <td>Specialization:</td>
 
-          <td>Entwicklung komplexer Softwaresysteme <AComment>Development of complex software systems</AComment></td>
+          <td>Development of complex software systems</td>
         </tr>
       </table>
 
@@ -139,7 +160,7 @@
       />
 
       <ul>
-        <li>Development of internal projects (Symfony)</li>
+        <li>Development of internal projects (Symfony PHP)</li>
 
         <li>Development of custom CMS solutions</li>
 
@@ -161,7 +182,7 @@
       </p>
 
       <ul>
-        <li>Development of custom CMS for Album uploads and management</li>
+        <li>Development of custom CMS for album uploads and management</li>
 
         <li>Development of browsing, streaming and downloads website</li>
 
@@ -172,10 +193,12 @@
         <li>Organization of a festival</li>
       </ul>
 
-      <a
-        href="https://festival2019.keinegrenzen.org/"
-        target="_blank"
-      >View Reference</a>
+      <QNoPrint>
+        <a
+          href="https://festival2019.keinegrenzen.org/"
+          target="_blank"
+        >View Reference</a>
+      </QNoPrint>
 
       <hr>
 
@@ -189,10 +212,12 @@
 
         <li>Custom CMS development</li>
 
-        <li>Design implementation</li>
+        <li>Front-end design implementation</li>
       </ul>
 
-      <a href="#freelance">View References</a>
+      <QNoPrint>
+        <a href="#freelance">View References</a>
+      </QNoPrint>
     </MCurriculumEntry>
 
     <hr>
@@ -206,26 +231,34 @@
       <ul>
         <li>Support and assistance in a workshop for vocational rehabilitation</li>
 
-        <li>Production and documentation of industrial component production for igus&reg; GmbH, Miele &amp; Cie. KG</li>
+        <li>Production and documentation of industrial components for igus&reg; GmbH, Miele &amp; Cie. KG</li>
       </ul>
-    </MCurriculumEntry>
 
-    <hr>
+      <hr>
 
-    <MCurriculumEntry date="before 2013">
       <ACurriculumEntryTitle
         organization="Gymnasium Kreuzgasse"
         position="Abitur + Baccalauréat"
       />
 
-      <p>I acquired both the German and French graduations. Advanced courses in physics and french.</p>
+      <p>I acquired both the German and French graduations.<br>Advanced courses in physics and french.</p>
     </MCurriculumEntry>
   </TFlex>
 </template>
 
 <script lang="ts" setup>
-import AComment from './AComment.vue'
-import ACurriculumEntryTitle from './ACurriculumEntryTitle.vue'
-import MCurriculumEntry from './MCurriculumEntry.vue'
-import TFlex from './TFlex.vue'
+  import ACurriculumEntryTitle from './ACurriculumEntryTitle.vue'
+  import MCurriculumEntry from './MCurriculumEntry.vue'
+  import TFlex from './TFlex.vue'
+  import QNoPrint from './QNoPrint.vue'
+
+  defineProps<{
+    primary?: boolean
+  }>()
 </script>
+
+<style lang="scss" scoped>
+.OCurriculum {
+  page-break-after: always;
+}
+</style>

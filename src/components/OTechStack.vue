@@ -3,11 +3,29 @@
     class="OTechStack"
     column
   >
-    <h2>Tech Stack &amp; Knowledge</h2>
+    <hgroup>
+      <h2>Skills &amp; Knowledge</h2>
 
-    <p>A mostly complete list of things.</p>
+      <QNoPrint>
+        <p>General properties, tools and technologies</p>
 
-    <h3>General Development Skills</h3>
+        <template #yes>
+          <p>An extensive list of tools and technologies can be found at <a href="https://barthy.koeln">https://barthy.koeln</a></p>
+        </template>
+      </QNoPrint>
+    </hgroup>
+
+    <strong>Senior Level</strong>
+
+    <ul>
+      <li>Software engineering &amp; development</li>
+
+      <li>Development in agile and interdisciplinary teams</li>
+
+      <li>Backend Stack (RESTful, SQL &amp; No-SQL, SOO & Monolithic, …)</li>
+
+      <li>Frontend Stack (Vue.js & React, Vanilla, …)</li>
+    </ul>
 
     <ul>
       <li>Abstract understanding of programming languages and frameworks</li>
@@ -16,15 +34,13 @@
 
       <li>Knowledge and experience across the full web technology stack</li>
 
-      <li>The urge to learn it all</li>
+      <li>Reviews &amp; constructive criticism</li>
+
+      <li>Sharing of knowledge &amp; coaching</li>
 
       <li>Linting, code quality tools and package managers</li>
 
-      <li>Unit-, integration-, and functional testing</li>
-
-      <li>Reviews &amp; constructive criticism</li>
-
-      <li>Accessibility and inclusivity considerations</li>
+      <li>Unit-, functional- and E2E testing</li>
 
       <li>Website and XSS security considerations</li>
 
@@ -33,103 +49,110 @@
       <li>Technical SEO</li>
     </ul>
 
-    <h3>Core Technologies</h3>
+    <QNoPrint>
+      <ul>
+        <li>Symfony <AComment>+ ecosystem, e.g. Doctrine, Twig, API&nbsp;Platform, …</AComment></li>
 
-    <strong>Senior Level</strong>
+        <li>Vue.js&nbsp;2&nbsp;+&nbsp;3 <AComment>+ ecosystem, e.g. pinia, router, …</AComment></li>
 
-    <ul>
-      <li>Symfony <AComment>+ ecosystem, e.g. Doctrine, Twig, API Platform, …</AComment></li>
+        <li>TypeScript</li>
 
-      <li>Vue.js 2 + 3 <AComment>+ ecosystem, e.g. pinia, router, …</AComment></li>
+        <li>Vanilla JS</li>
 
-      <li>TypeScript</li>
+        <li>Node.js</li>
 
-      <li>Vanilla JS since ES2016</li>
+        <li>SCSS with aBEM <AComment>leaning toward using as much native CSS as possible. Yay CSS variables!</AComment></li>
 
-      <li>Node.js</li>
+        <li>Shell-Scripting (Bash)</li>
 
-      <li>SCSS with aBEM <AComment>leaning toward using as much native CSS as possible. Yay CSS variables!</AComment></li>
+        <li>Linux <AComment>Ubuntu preferred for desktop &amp; servers</AComment></li>
 
-      <li>Shell-Scripting (Bash)</li>
+        <li>Relational databases &amp; SQL</li>
 
-      <li>Linux <AComment>Ubuntu preferred for desktop &amp; servers</AComment></li>
-
-      <li>Relational databases &amp; SQL</li>
-
-      <li>git (CLI)</li>
-    </ul>
+        <li>git (CLI)</li>
+      </ul>
+    </QNoPrint>
 
     <strong>Intermediate Level</strong>
 
     <ul>
-      <li>Three.js</li>
+      <li>Platform operations & architecture management</li>
 
-      <li>React.js</li>
-
-      <li>Payload CMS (React / Node.js based)</li>
-
-      <li>Webpack, rollup.js</li>
-
-      <li>Docker, docker-compose</li>
-
-      <li>GitHub Actions CI/CD</li>
-
-      <li>GitLab CI/CD Platform</li>
-
-      <li>Terraform</li>
-
-      <li>Secure cloud- and webhosting</li>
-
-      <li>Apache Solr</li>
+      <li>Accessibility and inclusivity considerations</li>
     </ul>
 
-    <h3>Infrequent Use Only</h3>
+    <QNoPrint>
+      <ul>
+        <li>Three.js</li>
 
-    <ul>
-      <li>Astro.build</li>
+        <li>React.js</li>
 
-      <li>React Native</li>
+        <li>Payload CMS (React&nbsp;/&nbsp;Node.js&nbsp;based)</li>
 
-      <li>Strapi CMS (React / Node.js based)</li>
+        <li>Webpack, rollup.js</li>
 
-      <li>Next.js</li>
+        <li>Docker, docker-compose</li>
 
-      <li>Nuxt.js</li>
+        <li>GitHub Actions CI/CD</li>
 
-      <li>Python</li>
+        <li>GitLab CI/CD Platform</li>
 
-      <li>Go</li>
+        <li>Terraform</li>
 
-      <li>Java</li>
+        <li>Apache Solr <AComment>+ general search engine knowledge</AComment></li>
+      </ul>
+    </QNoPrint>
 
-      <li>… <AComment>loads more over the years</AComment></li>
-    </ul>
+    <QNoPrint>
+      <h3>Infrequent Use Only</h3>
 
-    <h3>Personal Use Only</h3>
+      <ul>
+        <li>Astro.build</li>
 
-    <ul>
-      <li>C <AComment>microcontroller projects e.g. motorized IKEA lamp</AComment></li>
+        <li>Deno</li>
 
-      <li>C++ <AComment>VST audio plugin development</AComment></li>
-    </ul>
+        <li>React Native</li>
 
-    <h3>Other Software skills:</h3>
+        <li>Strapi CMS (React&nbsp;/&nbsp;Node.js&nbsp;based)</li>
 
-    <ul>
-      <li>Ableton Live & audio production <AComment>experienced hobbyist</AComment></li>
+        <li>Next.js</li>
 
-      <li>Blender modelling, animation, simulation & rendering <AComment>hobbyist</AComment></li>
+        <li>Nuxt.js</li>
 
-      <li>Adobe Photoshop, Illustrator, Lightroom <AComment>hobbyist</AComment></li>
+        <li>Python</li>
 
-      <li>Figma <AComment>designing, prototyping, implementation</AComment></li>
+        <li>Go</li>
 
-      <li>Adobe XD <AComment>designing, prototyping, implementation</AComment></li>
-    </ul>
+        <li>Java</li>
+
+        <li>… <AComment>loads more over the years</AComment></li>
+      </ul>
+
+      <h3>Personal Use Only</h3>
+
+      <ul>
+        <li>C <AComment>microcontroller projects e.g. motorized IKEA lamp</AComment></li>
+
+        <li>C++ <AComment>VST audio plugin development</AComment></li>
+      </ul>
+
+      <h3>Other Software skills</h3>
+
+      <ul>
+        <li>Ableton Live & audio production <AComment>experienced hobbyist</AComment></li>
+
+        <li>Blender modelling, animation, simulation & rendering <AComment>hobbyist</AComment></li>
+
+        <li>Adobe Photoshop, Illustrator, Lightroom <AComment>hobbyist</AComment></li>
+
+        <li>Figma <AComment>designing, prototyping, implementation</AComment></li>
+      </ul>
+    </QNoPrint>
   </TFlex>
 </template>
 
 <script lang="ts" setup>
-import AComment from './AComment.vue'
-import TFlex from './TFlex.vue'
+  import AComment from './AComment.vue'
+  import TFlex from './TFlex.vue'
+  import QNoPrint from './QNoPrint.vue'
 </script>

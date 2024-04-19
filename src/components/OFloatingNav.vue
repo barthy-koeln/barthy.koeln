@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts" setup>
-  import type {NavLink} from '../types/website'
+  import type { NavLink } from '../types/website'
 
   defineProps<{
     links: NavLink[]
@@ -22,13 +22,35 @@
 </script>
 
 <style lang="scss">
+@use "../variables" as *;
+
   .OFloatingNav {
+    background-color: var(--color-background);
     height: 100%;
     left: calc(-1 * var(--spacer-lg));
+    padding: var(--spacer);
     position: absolute;
     top: 0;
     transform: translateX(-100%);
+    z-index: 1000;
 
+    &:focus,
+    &:focus-within {
+      transform: translateX(var(--spacer));
+    }
+
+    @include desktop {
+      &,
+      &:focus,
+      &:focus-within {
+        transform: translateX(-100%);
+      }
+    }
+
+    @media print {
+      display: none;
+    }
+    
     &__list {
       display: flex;
       flex-direction: column;
