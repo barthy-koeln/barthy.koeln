@@ -3,17 +3,15 @@
     class="OTechStack"
     column
   >
-    <hgroup>
-      <h2>Skills &amp; Knowledge</h2>
+    <h2>Skills &amp; Knowledge</h2>
 
-      <QNoPrint>
-        <p>General properties, tools and technologies</p>
+    <QNoPrint>
+      <p>General properties, tools and technologies</p>
 
-        <template #yes>
-          <p>An extensive list of tools and technologies can be found at <a href="https://barthy.koeln">https://barthy.koeln</a></p>
-        </template>
-      </QNoPrint>
-    </hgroup>
+      <template #yes>
+        <p>An extensive list of tools and technologies can be found at <a href="https://barthy.koeln">https://barthy.koeln</a></p>
+      </template>
+    </QNoPrint>
 
     <strong>Senior Level</strong>
 
