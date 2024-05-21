@@ -21,24 +21,24 @@
   import type { OpenSourceProject } from '../types/website'
 
   const projects:  OpenSourceProject[] = [
-    // {
-    //   title: 'Arbitrary Remote Control System (ARCS)',
-    //   githubLink: 'https://github.com/arcs-vr',
-    //   demoLink: 'https://arcs.barthy.koeln',
-    //
-    //   image: {
-    //     width: 1920,
-    //     height: 1280,
-    //     src: '/images/arcs.webp',
-    //     alt: 'Mockup of two devices using a virtual experience remote control system'
-    //   },
-    //
-    //   paragraphs: [
-    //     'My bachelor thesis in early 2020 revolved around web and browser based virtual reality experiences, that were made accessible by combining several devices into a sigle Human Computer Interface (HCI).',
-    //     'You can use two smartphones, a smartphone and a laptop, or theoretically any connected device to control the VR experience and enjoy all degrees of freedom.',
-    //     'Front-end: Vue.js v2, Aframe, Three.js and Vanilla JS\nBack-end: MQTT'
-    //   ]
-    // },
+    {
+      title: 'Arbitrary Remote Control System (ARCS)',
+      githubLink: 'https://github.com/arcs-vr/arc-rtc',
+      demoLink: 'https://arcs.barthy.koeln',
+
+      image: {
+        width: 1920,
+        height: 1280,
+        src: '/images/arcs.webp',
+        alt: 'Mockup of two devices using a virtual experience remote control system'
+      },
+
+      paragraphs: [
+        'My bachelor thesis in early 2020 revolved around web and browser based virtual reality experiences, that were made accessible by combining several devices into a sigle Human Computer Interface (HCI).',
+        'You can use two smartphones, a smartphone and a laptop, or theoretically any connected device to control the VR experience and enjoy all degrees of freedom.',
+        'Front-end: Vue.js v2, Aframe, Three.js and Vanilla JS\nBack-end: MQTT'
+      ]
+    },
     {
       title: 'Scroll-Snap Slider',
       githubLink: 'https://github.com/barthy-koeln/scroll-snap-slider',
