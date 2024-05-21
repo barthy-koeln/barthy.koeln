@@ -1,0 +1,60 @@
+<template>
+  <footer class="OFooter">
+    <p class="OFooter__hints">
+      This website itself does not use cookies, tracking, logging or any other form of data storage.<br>
+
+      <br>
+
+      This website is hosted on servers operated by Hetzner Cloud GmbH in Germany.<br>
+    </p>
+
+    <div class="OFooter__imprint">
+      <p>Barth&eacute;l&eacute;my Bonhomme</p>
+
+      <p>post@barthy.koeln</p>
+
+      <p>+49&nbsp;176&nbsp;30&nbsp;59&nbsp;46&nbsp;43</p>
+    </div>
+  </footer>
+</template>
+
+<script lang="ts" setup>
+</script>
+
+<style lang="scss">
+  @use "../../variables" as *;
+
+  .OFooter {
+    align-items: center;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 2rem;
+    text-align: center;
+
+    @include desktop {
+      flex-direction: row;
+    }
+
+    @media print {
+      display: none;
+    }
+
+    &__hints {
+      max-width: 380px;
+
+      @include desktop {
+        text-align: start;
+      }
+    }
+
+    &__imprint {
+      @include desktop {
+        text-align: end;
+      }
+    }
+  }
+</style>

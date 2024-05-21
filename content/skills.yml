@@ -1,0 +1,100 @@
+core:
+  - name: General
+    skills:
+      - Git
+      - Linux
+      - Bash/Shell
+  - name: Backend
+    skills:
+      - PHP
+      - MySQL/MariaDB
+      - Symfony
+      - Twig
+      - nginx
+      - Apache Solr
+  - name: Frontend
+    skills:
+      - JavaScript
+      - HTML
+      - CSS
+  - name: Infrastructure
+    skills:
+      - Docker + Compose
+      - CI/CD (GitLab/GitHub Actions)
+
+
+specialized:
+    - name: Monitoring & Testing
+      skills:
+        - Sentry
+        - Zabbix
+        - Grafana K6
+        - Mocha
+        - Cypress
+        - PHPUnit
+        - Vitest
+    - name: Backend
+      skills:
+          - MongoDB
+          - PostgreSQL
+          - Next.js
+          - Redis
+          - ffmpeg
+          - imagemagick
+          - OpenAPI Spec
+    - name: Web Development
+      skills:
+        - TypeScript
+        - React.js
+        - Vue.js
+        - Three.js
+        - Express.js
+
+emerging:
+  - name: Cloud & DevOps
+    skills:
+      - AWS CDK
+      - AWS Lambda
+      - Terraform
+      - Caddy
+  - name: Web Development
+    skills:
+      - Astro
+      - PayloadCMS
+  - name: Gaming
+    skills:
+      - GDScript
+      - Godot Engine
+      - Godot C++ modules
+      - Godot build system
+  - name: Knowledge & Tools
+    skills:
+      - Diátaxis
+      - Cursor
+      - AI Coding Agents
+
+personal:
+  - name: C
+    years: -7
+  - name: C++
+    years: -7
+  - name: JUCE
+    years: -5
+  - name: Java
+    years: -7
+  - name: Android SDK
+    years: -7
+  - name: Ableton Live
+    years: -10
+  - name: Audio Production
+    years: -10
+  - name: 3D-Printing & CAD
+    years: -10
+  - name: Blender
+    years: -5
+  - name: Adobe Photoshop
+    years: -10
+  - name: Adobe Illustrator
+    years: -10
+  - name: OpenSCAD
+    years: -5

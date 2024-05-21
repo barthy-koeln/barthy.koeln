@@ -1,0 +1,50 @@
+contact:
+  - label: Call
+    target: tel:+4917630594643
+    variant: call
+  - label: Write
+    target: mailto:post@barthy.koeln
+    variant: write
+  - label: Chat
+    target: https://wa.me/4917630594643
+    variant: chat
+contactPrint:
+  - label: web
+    target: https://barthy.koeln
+  - label: mail
+    target: post@barthy.koeln
+  - label: tel
+    target: +49 176 30 59 46 43
+links:
+    - label: Intro
+      target: intro
+    - label: Description
+      target: description
+    - label: Curriculum
+      target: curriculum
+    - label: Capabilities
+      target: capabilities
+    - label: Techstack
+      target: techstack
+    - label: Languages
+      target: languages
+    - label: Freelance
+      target: freelance
+    - label: Open Source
+      target: open-source
+socialLinks:
+    - label: GitHub
+      target: https://github.com/barthy-koeln
+      variant: github
+    - label: Stack Overflow
+      target: https://stackoverflow.com/users/3808452/barthy
+      variant: stack-overflow
+    - label: Codepen
+      target: https://codepen.io/barthy-koeln
+      variant: codepen
+    - label: Printables
+      target: https://www.printables.com/@barthy_koeln
+      variant: printables
+    - label: LinkedIn
+      target: https://www.linkedin.com/in/barthy-bonhomme/
+      variant: linkedin

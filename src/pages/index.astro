@@ -1,48 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import TFlex from '../components/TFlex.vue'
-import OIntro from '../components/OIntro.vue'
-import OSelfDescription from '../components/OSelfDescription.vue'
-import OFloatingNav from '../components/OFloatingNav.vue'
-import OLanguages from '../components/OLanguages.vue'
-import OCurriculum from '../components/OCurriculum.vue'
-import OFreelanceReferences from '../components/OFreelanceReferences.vue'
-import OTechStack from '../components/OTechStack.vue'
-import OOpenSourceSection from '../components/OOpenSourceSection.vue'
-import AGithubCTA from '../components/AGithubCTA.vue'
-import QNoPrint from '../components/QNoPrint.vue'
-import { NavLink } from '../types/website'
-
-const links: NavLink[] = [
-  {
-    label: 'Intro',
-    target: 'intro'
-  },
-  {
-    label: 'Description',
-    target: 'description'
-  },
-  {
-    label: 'Curriculum',
-    target: 'curriculum'
-  },
-  {
-    label: 'Techstack',
-    target: 'techstack'
-  },
-  {
-    label: 'Languages',
-    target: 'languages'
-  },
-  {
-    label: 'Freelance',
-    target: 'freelance'
-  },
-  {
-    label: 'Open Source',
-    target: 'open-source'
-  }
-]
+import TFlex from '../components/templates/TFlex.vue'
+import OIntro from '../components/organisms/OIntro.vue'
+import OSelfDescription from '../components/organisms/OSelfDescription.vue'
+import OFloatingNav from '../components/organisms/OFloatingNav.vue'
+import OLanguages from '../components/organisms/OLanguages.vue'
+import OCurriculum from '../components/organisms/OCurriculum.vue'
+import OFreelanceReferences from '../components/organisms/OFreelanceReferences.vue'
+import OCapabilities from '../components/organisms/OCapabilities.vue'
+import OOpenSourceSection from '../components/organisms/OOpenSourceSection.vue'
+import AGithubCTA from '../components/atoms/AGithubCTA.vue'
+import QNoPrint from '../components/quarks/QNoPrint.vue'
+import QPagebreak from '../components/quarks/QPagebreak.vue'
+import OTechstack from '../components/organisms/OTechstack.vue'
 ---
 
 <Layout>
@@ -50,7 +20,7 @@ const links: NavLink[] = [
     column={true}
     spacious={true}
   >
-    <OFloatingNav links={links}/>
+    <OFloatingNav/>
 
     <OIntro id="intro"/>
 
@@ -64,27 +34,43 @@ const links: NavLink[] = [
       <hr>
 
       <div slot="yes">
-        <p>Barthy Bonhomme: page 2 of 3</p>
+        <p style="margin-top: 1.5rem;">Barthy Bonhomme: page 1 of 3</p>
       </div>
     </QNoPrint>
 
-    <OCurriculum />
+    <QPagebreak/>
+
+    <OCurriculum/>
 
     <QNoPrint>
       <hr>
 
       <div slot="yes">
-        <p>Barthy Bonhomme: page 3 of 3</p>
+        <p style="margin-top: 0rem;">Barthy Bonhomme: page 2 of 3</p>
       </div>
     </QNoPrint>
 
-    <OTechStack id="techstack"/>
+    <QPagebreak/>
 
-    <OLanguages id="languages"/>
+    <OCapabilities id="capabilities"/>
+
+    <OTechstack id="techstack"/>
 
     <QNoPrint>
       <hr>
 
+      <div slot="yes">
+        <p style="max-width: unset; margin-top: 1rem;">
+          Barthy Bonhomme: page 3 of 3 — Save paper & ink<br>If you really need a printed
+          copy, find a black on white version in the print dialog at
+          <a href="https://barthy.koeln">https://barthy.koeln</a>
+        </p>
+      </div>
+    </QNoPrint>
+
+    <QPagebreak/>
+
+    <QNoPrint>
       <OFreelanceReferences id="freelance"/>
 
       <hr>

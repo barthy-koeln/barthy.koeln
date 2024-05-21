@@ -1,10 +1,7 @@
 export interface NavLink {
   label: string,
-  target: string
-}
-
-export interface SocialLink extends NavLink {
-  icon: string
+  target: string,
+  variant?: 'call'|'write'|'chat'
 }
 
 export interface Image {
@@ -27,4 +24,32 @@ export interface OpenSourceProject {
   githubLink: string,
   paragraphs: string[],
   image: Image
+}
+
+export interface PageMeta {
+  defaultTitle: string,
+  defaultDescription: string,
+  titleSuffix: string,
+  imageUrl: string
+  canonicalUrl: string
+}
+
+export interface SkillGroup {
+  name: string,
+  skills: []
+}
+
+export interface PageContent {
+  meta: PageMeta,
+  contact: NavLink[],
+  contactPrint: NavLink[],
+  links: NavLink[],
+  socialLinks: NavLink[],
+  skills: {
+    core: SkillGroup[],
+    specialized: SkillGroup[]
+    emerging: SkillGroup[]
+  }
+  referenceProjects: ReferenceProject[],
+  openSourceProjects: OpenSourceProject[]
 }

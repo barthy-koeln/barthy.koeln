@@ -2,98 +2,101 @@
 import '../root.scss'
 import '@fontsource/ubuntu/latin-400.css'
 import '@fontsource/ubuntu/latin-700.css'
-import TPage from '../components/TPage.vue'
+import TPage from '../components/templates/TPage.vue'
+import { content } from '../context/content.ts'
 
 export interface Props {
   title?: string;
   description?: string;
 }
 
+const { meta } = content
+
 const {
-  title = 'barthy.koeln',
-  description = 'Software Engineering & Web Development'
+  title = meta.defaultTitle,
+  description = meta.defaultDescription,
 } = Astro.props
 
-const titleWithSuffix = title + ' · Software Engineering'
-const metaImageUrl = 'https://barthy.koeln/images/meta-image.webp'
-const canonicalUrl = 'https://barthy.koeln'
+const titleWithSuffix = title + meta.titleSuffix
+const metaImageUrl = meta.imageUrl
+const canonicalUrl = meta.canonicalUrl
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
+<head>
+  <meta charset="UTF-8"/>
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
 
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/favicon.svg"
-    />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="/favicon.svg"
+  />
 
-    <meta
-      name="title"
-      content={titleWithSuffix}
-    >
-    <meta
-      name="description"
-      content={description}
-    >
+  <meta
+    name="title"
+    content={titleWithSuffix}
+  >
+  <meta
+    name="description"
+    content={description}
+  >
 
-    <meta
-      property="og:type"
-      content="website"
-    >
-    <meta
-      property="og:url"
-      content={canonicalUrl}
-    >
-    <meta
-      property="og:title"
-      content={titleWithSuffix}
-    >
-    <meta
-      property="og:description"
-      content={description}
-    >
-    <meta
-      property="og:image"
-      content={metaImageUrl}
-    >
+  <meta
+    property="og:type"
+    content="website"
+  >
+  <meta
+    property="og:url"
+    content={canonicalUrl}
+  >
+  <meta
+    property="og:title"
+    content={titleWithSuffix}
+  >
+  <meta
+    property="og:description"
+    content={description}
+  >
+  <meta
+    property="og:image"
+    content={metaImageUrl}
+  >
 
-    <meta
-      property="twitter:card"
-      content="summary_large_image"
-    >
-    <meta
-      property="twitter:url"
-      content={canonicalUrl}
-    >
-    <meta
-      property="twitter:title"
-      content={titleWithSuffix}
-    >
-    <meta
-      property="twitter:description"
-      content={description}
-    >
-    <meta
-      property="twitter:image"
-      content={metaImageUrl}
-    >
+  <meta
+    property="twitter:card"
+    content="summary_large_image"
+  >
+  <meta
+    property="twitter:url"
+    content={canonicalUrl}
+  >
+  <meta
+    property="twitter:title"
+    content={titleWithSuffix}
+  >
+  <meta
+    property="twitter:description"
+    content={description}
+  >
+  <meta
+    property="twitter:image"
+    content={metaImageUrl}
+  >
 
-    <title>{titleWithSuffix}</title>
-  </head>
+  <title>{titleWithSuffix}</title>
+</head>
 
-  <body>
-    <TPage>
-      <slot/>
-    </TPage>
+<body>
+<TPage>
+  <slot/>
+</TPage>
 
-    <script src="../main.ts"/>
-  </body>
+<script src="../main.ts"/>
+</body>
 </html>
