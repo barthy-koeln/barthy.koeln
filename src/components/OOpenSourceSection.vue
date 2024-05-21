@@ -36,7 +36,7 @@
       paragraphs: [
         'My bachelor thesis in early 2020 revolved around web and browser based virtual reality experiences, that were made accessible by combining several devices into a sigle Human Computer Interface (HCI).',
         'You can use two smartphones, a smartphone and a laptop, or theoretically any connected device to control the VR experience and enjoy all degrees of freedom.',
-        'Front-end: Vue.js v2, Aframe, Three.js and Vanilla JS\nBack-end: MQTT'
+        'Front-end: Vue.js v3, Three.js and WebRTC through PeerJS'
       ]
     },
     {
