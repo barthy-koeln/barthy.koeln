@@ -6,7 +6,24 @@
   >
     <h2>Curriculum Vitae</h2>
 
-    <MCurriculumEntry date="since 05/2023">
+    <MCurriculumEntry date="since 10/2024">
+      <ACurriculumEntryTitle
+          organization="Electronic Arts"
+          position="Software Engineer"
+      />
+
+      <h4>Responsibilities:</h4>
+
+      <ul>
+        <li>Requirements engineering</li>
+
+        <li>Coaching and Knowledge Exchange</li>
+
+        <li>Development</li>
+      </ul>
+    </MCurriculumEntry>
+
+    <MCurriculumEntry date="2023-2024">
       <ACurriculumEntryTitle
         organization="grandcentrix GmbH"
         position="Senior Web Developer"
@@ -57,7 +74,7 @@
         <h4>Project Types:</h4>
 
         <ul>
-          <li>Custom CMS, SRM, CRM applications for medium to big datasets (Symfony, API Platform w/ JSON-LD, Vue.js&nbsp;2, Vue.js&nbsp;3)</li>
+          <li>Custom CMS, SRM, CRM applications</li>
 
           <li>Website & Hybrid App development (Android + iOS, Headless CMS + React & React Native, GraphQL)</li>
 
@@ -186,7 +203,7 @@
 
         <li>Development of browsing, streaming and downloads website</li>
 
-        <li>Landingpages for events</li>
+        <li>Landing pages for events</li>
 
         <li>Production of artist profile videos</li>
 
@@ -259,6 +276,6 @@
 
 <style lang="scss" scoped>
 .OCurriculum {
-  page-break-after: always;
+  break-after: always;
 }
 </style>

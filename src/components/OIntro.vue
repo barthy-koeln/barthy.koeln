@@ -51,8 +51,6 @@
 
         Pronouns: He/Him (Er/Ihm)<br>
 
-        Born in France in the summer of 1994<br>
-
         Located in Köln &amp; Bonn<br>
       </p>
 
