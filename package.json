@@ -14,26 +14,26 @@
   "dependencies": {
     "@astrojs/vue": "^5.1.4",
     "@fontsource/ubuntu": "^5.2.8",
-    "astro": "^5.17.1",
-    "vue": "^3.5.27"
+    "astro": "^5.17.2",
+    "vue": "^3.5.28"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.3",
     "@eslint/js": "^9.39.2",
     "@modyfi/vite-plugin-yaml": "^1.1.1",
-    "@types/node": "^25.2.2",
-    "@typescript-eslint/eslint-plugin": "^8.54.0",
-    "@typescript-eslint/parser": "^8.54.0",
+    "@types/node": "^25.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.56.0",
+    "@typescript-eslint/parser": "^8.56.0",
     "@vitejs/plugin-vue": "^6.0.4",
-    "@vue/eslint-config-typescript": "^14.6.0",
+    "@vue/eslint-config-typescript": "^14.7.0",
     "@vue/tsconfig": "^0.8.1",
     "eslint": "^9.39.2",
-    "eslint-plugin-vue": "^10.7.0",
+    "eslint-plugin-vue": "^10.8.0",
     "postcss": "^8.5.6",
     "postcss-html": "^1.8.1",
     "postcss-scss": "^4.0.9",
     "sass": "^1.97.3",
-    "stylelint": "^17.1.1",
+    "stylelint": "^17.3.0",
     "stylelint-config-recommended-scss": "^17.0.0",
     "stylelint-config-recommended-vue": "^1.6.1",
     "stylelint-config-standard": "^40.0.0",
@@ -41,7 +41,7 @@
     "stylelint-order": "^7.0.1",
     "typescript": "^5.9.3",
     "vite-plugin-watch-and-run": "^1.7.5",
-    "vue-eslint-parser": "^10.2.0"
+    "vue-eslint-parser": "^10.4.0"
   },
   "packageManager": "yarn@4.12.0"
 }
