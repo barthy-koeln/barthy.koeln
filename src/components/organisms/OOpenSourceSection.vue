@@ -42,7 +42,7 @@
     {
       title: 'Scroll-Snap Slider',
       githubLink: 'https://github.com/barthy-koeln/scroll-snap-slider',
-      demoLink: 'https://barthy-koeln.github.io/scroll-snap-slider/',
+      demoLink: 'https://scroll-snap-slider.barthy.koeln',
 
       image: {
         width: 1360,
