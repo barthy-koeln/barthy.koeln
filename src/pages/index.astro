@@ -4,8 +4,8 @@ import TFlex from '../components/templates/TFlex.vue'
 import OIntro from '../components/organisms/OIntro.vue'
 import OSelfDescription from '../components/organisms/OSelfDescription.vue'
 import OFloatingNav from '../components/organisms/OFloatingNav.vue'
-import OLanguages from '../components/organisms/OLanguages.vue'
-import OCurriculum from '../components/organisms/OCurriculum.vue'
+import OCurriculumPrimary from '../components/organisms/OCurriculumPrimary.vue'
+import OCurriculumContinuation from '../components/organisms/OCurriculumContinuation.vue'
 import OFreelanceReferences from '../components/organisms/OFreelanceReferences.vue'
 import OCapabilities from '../components/organisms/OCapabilities.vue'
 import OOpenSourceSection from '../components/organisms/OOpenSourceSection.vue'
@@ -28,26 +28,18 @@ import OTechstack from '../components/organisms/OTechstack.vue'
 
     <hr>
 
-    <OCurriculum id="curriculum" primary={true}/>
+    <OCurriculumPrimary id="curriculum"/>
 
     <QNoPrint>
       <hr>
-
-      <div slot="yes">
-        <p style="margin-top: 1.5rem;">Barthy Bonhomme: page 1 of 3</p>
-      </div>
     </QNoPrint>
 
     <QPagebreak/>
 
-    <OCurriculum/>
+    <OCurriculumContinuation/>
 
     <QNoPrint>
       <hr>
-
-      <div slot="yes">
-        <p style="margin-top: 0rem;">Barthy Bonhomme: page 2 of 3</p>
-      </div>
     </QNoPrint>
 
     <QPagebreak/>
@@ -59,18 +51,6 @@ import OTechstack from '../components/organisms/OTechstack.vue'
     <QNoPrint>
       <hr>
 
-      <div slot="yes">
-        <p style="max-width: unset; margin-top: 1rem;">
-          Barthy Bonhomme: page 3 of 3 — Save paper & ink<br>If you really need a printed
-          copy, find a black on white version in the print dialog at
-          <a href="https://barthy.koeln">https://barthy.koeln</a>
-        </p>
-      </div>
-    </QNoPrint>
-
-    <QPagebreak/>
-
-    <QNoPrint>
       <OFreelanceReferences id="freelance"/>
 
       <hr>

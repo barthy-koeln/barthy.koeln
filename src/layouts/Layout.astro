@@ -4,6 +4,7 @@ import '@fontsource/ubuntu/latin-400.css'
 import '@fontsource/ubuntu/latin-700.css'
 import TPage from '../components/templates/TPage.vue'
 import { content } from '../context/content.ts'
+import APageCount from '../components/atoms/APageCount.vue'
 
 export interface Props {
   title?: string;
@@ -96,6 +97,15 @@ const canonicalUrl = meta.canonicalUrl
 <TPage>
   <slot/>
 </TPage>
+
+<APageCount page={1} total={3}/>
+<APageCount page={2} total={3}/>
+<APageCount page={3} total={3}>
+  <span>
+    Save paper & ink; If you really need a printed copy, find a black on white version in the print dialog at
+    <a href="https://barthy.koeln">https://barthy.koeln</a>
+  </span>
+</APageCount>
 
 <script src="../main.ts"/>
 </body>

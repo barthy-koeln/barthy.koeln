@@ -38,6 +38,7 @@
 
       @media print {
         padding: var(--spacer-lg);
+        padding-bottom: 0;
       }
     }
   }

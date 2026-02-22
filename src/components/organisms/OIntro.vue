@@ -36,7 +36,9 @@
 
           happy to relocate within few months.<br>
 
-          <strong>Fluent in</strong> French, German, English (C1)
+          <strong>Fluent in</strong>
+
+           French&nbsp;&amp;&nbsp;German&nbsp;(Native), English&nbsp;(C1)
         </div>
       </div>
 
