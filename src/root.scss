@@ -148,6 +148,7 @@ ul {
   padding-inline-start: var(--spacer-lg);
 
   li {
+    max-width: 72ch;
     padding-block: var(--spacer-xs);
   }
 }

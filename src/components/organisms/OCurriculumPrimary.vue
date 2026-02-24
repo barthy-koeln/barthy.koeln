@@ -20,20 +20,16 @@
 
         Senior position in an agile team exploring new technologies.<br>
         Projects range from internal demos and prototypes to production-ready features for EA's games and services.
-
-        Set up a knowledge exchange platform and filled it following the Diátaxis framework.
       </p>
 
       <ul>
-        <li>Requirements engineering</li>
+        <li>Set up a knowledge exchange platform and filled it following the Diátaxis framework.</li>
 
-        <li>Product- & software development</li>
+        <li>Exploration and choice of technologies</li>
 
         <li>Coaching of up to 3 Software Engineer II</li>
 
         <li>"you build it, you run it" DevOps, PlatformOps, Monitoring</li>
-
-        <li>Exploration and choice of technologies</li>
       </ul>
     </MCurriculumEntry>
 
@@ -55,9 +51,9 @@
       </p>
 
       <ul>
-        <li>Implemented strict coding guidelines ensuring maintainable and fast development</li>
-
-        <li>Reduced page load times by 90% by enforcing code reuse and minimizing dependencies.</li>
+        <li>Reduced page load times by 90% by enforcing strict coding guidelines, code reuse and minimizing
+          dependencies.
+        </li>
 
         <li>Continuously improved e2e tests, reducing regression errors despite large refactorings.</li>
 
@@ -66,14 +62,23 @@
         <li>Spun up a second product front-end within weeks thanks to loosely coupled architecture and reusable
           components.
         </li>
+
+        <li>
+          Created a bandwidth consumption calculator:<br/>
+
+          Data transmitted in IIoT application based on user config, firmware logic, data encoding and UDP transport.
+          Calculations included application alert and network condition simulation, validated against real-world measurements.<br/>
+
+          Used in customer-facing UI and as a basis for billing and capacity planning.
+        </li>
       </ul>
     </MCurriculumEntry>
   </TFlex>
 </template>
 
 <script lang="ts" setup>
-  import MCurriculumEntryTitle from '../molecules/MCurriculumEntryTitle.vue'
   import MCurriculumEntry from '../molecules/MCurriculumEntry.vue'
+  import MCurriculumEntryTitle from '../molecules/MCurriculumEntryTitle.vue'
   import TFlex from '../templates/TFlex.vue'
 </script>
 
