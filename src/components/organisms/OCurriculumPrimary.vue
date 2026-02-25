@@ -51,11 +51,11 @@
       </p>
 
       <ul>
-        <li>Reduced page load times by 90% by enforcing strict coding guidelines, code reuse and minimizing
+        <li>Reduced page load times by 90% by enforcing strict coding guidelines, code reuse, and minimizing
           dependencies.
         </li>
 
-        <li>Continuously improved e2e tests, reducing regression errors despite large refactorings.</li>
+        <li>Continuously improved e2e tests, reducing regression errors despite large refactoring.</li>
 
         <li>Empowered interdisciplinary exchange & planning through structured RFCs.</li>
 
