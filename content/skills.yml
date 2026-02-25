@@ -56,6 +56,7 @@ emerging:
       - AWS CDK
       - AWS Lambda
       - Terraform
+      - Kubernetes
       - Caddy
   - name: Web Development
     skills:

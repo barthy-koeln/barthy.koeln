@@ -10,7 +10,7 @@
       <MCurriculumEntryTitle
         organization="Electronic Arts"
         position="Software Engineer III"
-        tech-stack="Next.js/React, GDScript/Godot C++"
+        tech-stack="Next.js/React/TypeScript, GDScript/Godot C++"
       />
 
       <p>
@@ -37,7 +37,7 @@
       <MCurriculumEntryTitle
         organization="grandcentrix GmbH (Vodafone Group)"
         position="Senior Web Developer"
-        tech-stack="Node.js, Vue.js"
+        tech-stack="Node.js, Vue.js/TypeScript"
       />
 
       <p>

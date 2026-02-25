@@ -16,7 +16,7 @@
       <MCurriculumEntryTitle
         organization="VUCX GmbH"
         position="Head of Development"
-        tech-stack="Symfony PHP, Vue.js"
+        tech-stack="Symfony PHP, Vue.js/TypeScript"
       />
 
       <p>
@@ -76,7 +76,7 @@
       <MCurriculumEntryTitle
         organization="VUCX GmbH"
         position="Working Student Web Development"
-        tech-stack="Symfony PHP, Vue.js"
+        tech-stack="Symfony PHP, Vue.js/JavaScript"
       />
 
       <p>
@@ -89,7 +89,7 @@
       <MCurriculumEntryTitle
         organization="keinegrenzen.org"
         position="Founder and Developer"
-        tech-stack="Symfony PHP, Vue.js"
+        tech-stack="Symfony PHP, Vue.js/JavaScript"
       />
 
       <p>
@@ -117,7 +117,7 @@
       <MCurriculumEntryTitle
         organization="Freelance"
         position="Web Development"
-        tech-stack="Symfony PHP, Vue.js"
+        tech-stack="Symfony PHP, Vue.js/TypeScript"
       />
 
       <p>Development, hosting, and maintenance of portfolio websites and interactive 3D experiences.</p>
