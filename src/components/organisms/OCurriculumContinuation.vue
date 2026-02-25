@@ -28,7 +28,9 @@
 
         <li>Developed interactive and discoverable search engines for ~1M daily visitors.</li>
 
-        <li>Architected and implemented multi-tenant / multi-site distributed CMs</li>
+        <li>Migrated monolithic servers to modern containerized cloud deployments.</li>
+
+        <li>Architected and implemented multi-tenant / multi-site distributed CMs.</li>
 
         <li>Coached a developer now promoted to Software Engineer II.</li>
 
