@@ -3170,9 +3170,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^5.17.2":
-  version: 5.17.2
-  resolution: "astro@npm:5.17.2"
+"astro@npm:5.18.0":
+  version: 5.18.0
+  resolution: "astro@npm:5.18.0"
   dependencies:
     "@astrojs/compiler": "npm:^2.13.0"
     "@astrojs/internal-helpers": "npm:0.7.5"
@@ -3197,7 +3197,7 @@ __metadata:
     dlv: "npm:^1.1.3"
     dset: "npm:^3.1.4"
     es-module-lexer: "npm:^1.7.0"
-    esbuild: "npm:^0.27.0"
+    esbuild: "npm:^0.27.3"
     estree-walker: "npm:^3.0.3"
     flattie: "npm:^1.1.1"
     fontace: "npm:~0.4.0"
@@ -3243,7 +3243,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10c0/1b4280da538e86ab732cf48ae47bb3dafcab0ae82a80948cb7788c04ba4184613300f2f722036d0ac785f8456122782f39594dd45822c8da65ba8e0eff9cb450
+  checksum: 10c0/c15981932458033c8fa125bdb36d327bc4d337ae38fdf83b36e563865d3aff64de0aa3fcabf5e875e83565f6e98f63cb604d3876b8563266e6cc59fb10611f07
   languageName: node
   linkType: hard
 
@@ -3290,7 +3290,7 @@ __metadata:
     "@vitejs/plugin-vue": "npm:^6.0.4"
     "@vue/eslint-config-typescript": "npm:^14.7.0"
     "@vue/tsconfig": "npm:^0.8.1"
-    astro: "npm:^5.17.2"
+    astro: "npm:5.18.0"
     eslint: "npm:^9.39.2"
     eslint-plugin-vue: "npm:^10.8.0"
     postcss: "npm:^8.5.6"
@@ -4182,7 +4182,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.27.0":
+"esbuild@npm:^0.27.3":
   version: 0.27.3
   resolution: "esbuild@npm:0.27.3"
   dependencies:
