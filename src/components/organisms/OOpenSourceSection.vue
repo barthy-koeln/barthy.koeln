@@ -77,7 +77,7 @@
     {
       title: 'Experiment: Parametrized Canvas Animations',
       githubLink: 'https://github.com/barthy-koeln/generative-lines',
-      demoLink: 'https://codepen.io/barthy-koeln/pen/rNjMwrK',
+      demoLink: 'https://generative-lines.barthy.koeln',
 
       image: {
         width: 1920,
@@ -88,7 +88,7 @@
 
       paragraphs: [
         'Generate beautiful artworks using some well-defined parameters and a bit of randomness.',
-        'Technologies: JS, TWEEN.js',
+        'Technologies: TypeScript, TWEEN.js',
       ],
     },
   ]
