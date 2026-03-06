@@ -6,20 +6,22 @@
     <h3>{{ project.title }}</h3>
 
     <div class="MOpenSourceProject__imageWrapper">
-      <a
-        :href="project.demoLink"
-        class="MOpenSourceProject__imageLink"
-        target="_blank"
-      >
-        <img
-          :alt="project.image.alt"
-          :height="project.image.height"
-          :src="project.image.src"
-          :width="project.image.width"
-          class="MOpenSourceProject__image"
-          loading="lazy"
+      <slot>
+        <a
+          :href="project.demoLink"
+          class="MOpenSourceProject__imageLink"
+          target="_blank"
         >
-      </a>
+          <img
+            :alt="project.image.alt"
+            :height="project.image.height"
+            :src="project.image.src"
+            :width="project.image.width"
+            class="MOpenSourceProject__image"
+            loading="lazy"
+          >
+        </a>
+      </slot>
 
       <template v-if="project.image.attribution">
         <small>{{ project.image.attribution }}</small>

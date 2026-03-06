@@ -1,3 +1,5 @@
+import type { Component } from 'vue'
+
 export interface NavLink {
   label: string,
   target: string,
@@ -23,7 +25,8 @@ export interface OpenSourceProject {
   demoLink: string,
   githubLink: string,
   paragraphs: string[],
-  image: Image
+  image: Image,
+  component?: Component
 }
 
 export interface PageMeta {

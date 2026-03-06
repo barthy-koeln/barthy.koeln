@@ -14,14 +14,15 @@
   "dependencies": {
     "@astrojs/vue": "^5.1.4",
     "@fontsource/ubuntu": "^5.2.8",
-    "astro": "5.18.0",
-    "vue": "^3.5.28"
+    "astro": "^5.18.0",
+    "generative-lines": "^0.1.2",
+    "vue": "^3.5.29"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.3",
-    "@eslint/js": "^9.39.2",
+    "@eslint/eslintrc": "^3.3.4",
+    "@eslint/js": "^9.39.3",
     "@modyfi/vite-plugin-yaml": "^1.1.1",
-    "@types/node": "^25.2.3",
+    "@types/node": "^25.3.5",
     "@typescript-eslint/eslint-plugin": "^8.56.0",
     "@typescript-eslint/parser": "^8.56.0",
     "@vitejs/plugin-vue": "^6.0.4",
@@ -43,5 +44,5 @@
     "vite-plugin-watch-and-run": "^1.7.5",
     "vue-eslint-parser": "^10.4.0"
   },
-  "packageManager": "yarn@4.12.0"
+  "packageManager": "yarn@4.13.0"
 }

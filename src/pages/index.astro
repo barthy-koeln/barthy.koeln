@@ -13,6 +13,7 @@ import AGithubCTA from '../components/atoms/AGithubCTA.vue'
 import QNoPrint from '../components/quarks/QNoPrint.vue'
 import QPagebreak from '../components/quarks/QPagebreak.vue'
 import OTechstack from '../components/organisms/OTechstack.vue'
+import MGenerativeLines from '../components/molecules/MGenerativeLines.vue'
 ---
 
 <Layout>
@@ -55,7 +56,28 @@ import OTechstack from '../components/organisms/OTechstack.vue'
 
       <hr>
 
-      <OOpenSourceSection id="open-source"/>
+      <OOpenSourceSection id="open-source">
+        <MGenerativeLines
+          client:visible
+          project={{
+            title: 'Experiment: Parametrized Canvas Animations',
+            githubLink: 'https://github.com/barthy-koeln/generative-lines',
+            demoLink: 'https://generative-lines.barthy.koeln',
+
+            image: {
+              width: 1920,
+              height: 937,
+              src: '/images/generative-lines.webp',
+              alt: 'An interactive 3D Environment with scrollable and clickable animations.',
+            },
+
+            paragraphs: [
+              'Generate beautiful artworks using some well-defined parameters and a bit of randomness.',
+              'Technologies: TypeScript, TWEEN.js',
+            ],
+          }}
+        />
+      </OOpenSourceSection>
 
       <hr>
 

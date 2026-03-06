@@ -3,8 +3,8 @@
     <h2>Open Source Projects</h2>
 
     <template
-      v-for="(project, index) of projects"
-      :key="index"
+        v-for="(project, index) of projects"
+        :key="index"
     >
       <MOpenSourceProject :project="project"/>
 
@@ -12,10 +12,15 @@
         <hr>
       </template>
     </template>
+
+    <slot/>
   </TFlex>
 </template>
 
-<script lang="ts" setup>
+<script
+    lang="ts"
+    setup
+>
   import type { OpenSourceProject } from '../../types/website'
   import MOpenSourceProject from '../molecules/MOpenSourceProject.vue'
   import TFlex from '../templates/TFlex.vue'
@@ -73,23 +78,6 @@
         'Scrubbing through a keyframed animation, exploration with WASD/Arrow keys controls, and orbit controls. Interaction and reactivity managed in Vue.js.',
         'Technologies: Blender, Vue.js v3, Three.js',
       ],
-    },
-    {
-      title: 'Experiment: Parametrized Canvas Animations',
-      githubLink: 'https://github.com/barthy-koeln/generative-lines',
-      demoLink: 'https://generative-lines.barthy.koeln',
-
-      image: {
-        width: 1920,
-        height: 937,
-        src: '/images/generative-lines.webp',
-        alt: 'An interactive 3D Environment with scrollable and clickable animations.',
-      },
-
-      paragraphs: [
-        'Generate beautiful artworks using some well-defined parameters and a bit of randomness.',
-        'Technologies: TypeScript, TWEEN.js',
-      ],
-    },
+    }
   ]
 </script>
