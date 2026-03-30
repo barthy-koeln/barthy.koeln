@@ -18,7 +18,7 @@ export default defineConfigWithVueTs(
 
       'vue/script-indent': [
         'error', 2, {
-          baseIndent: 1,
+          baseIndent: 0,
           switchCase: 1,
           ignores: [],
         }

@@ -1,0 +1,22 @@
+# Education and certifications data for RDFa schema.org markup
+
+education:
+  - name: "Technical Computer Science"
+    credentialName: "Bachelor of Science"
+    credentialStart: "2014"
+    credentialEnd: "2020"
+    credentialIssuer: "University of Applied Sciences Cologne"
+    address:
+      city: "Köln"
+      country: "DE"
+    description: "Degree program: Technical computer science. Specialization: Development of complex software systems. Thesis explored web and browser based virtual reality experiences combining multiple devices into headset and controller through MQTT and Websockets."
+
+  - name: "Abitur + Baccalauréat"
+    credentialName: "German and French Secondary Education"
+    credentialStart: "2013"
+    credentialEnd: "2014"
+    credentialIssuer: "Gymnasium Kreuzgasse"
+    address:
+      city: "Köln"
+      country: "DE"
+    description: "Completed secondary education with German Abitur and French Baccalauréat."

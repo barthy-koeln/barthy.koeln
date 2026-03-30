@@ -9,10 +9,10 @@
       <img
         alt=""
         class="AGithubCTA__icon"
-        height="64px"
+        height="64"
         loading="lazy"
         src="/icons/github.svg"
-        width="64px"
+        width="64"
       >
 
       <span>More on GitHub &raquo;</span>
@@ -21,7 +21,7 @@
 </template>
 
 <script lang="ts" setup>
-  import TFlex from '../templates/TFlex.vue'
+import TFlex from '../templates/TFlex.vue'
 </script>
 
 <style lang="scss">

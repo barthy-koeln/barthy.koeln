@@ -11,10 +11,13 @@ contact:
 contactPrint:
   - label: web
     target: https://barthy.koeln
+    url: https://barthy.koeln
   - label: mail
     target: post@barthy.koeln
+    url: mailto:post@barthy.koeln
   - label: tel
     target: +49 176 30 59 46 43
+    url: tel:+4917630594643
 links:
     - label: Intro
       target: intro

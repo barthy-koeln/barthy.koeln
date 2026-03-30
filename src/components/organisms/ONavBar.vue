@@ -3,11 +3,11 @@
     <img
       alt="barthy.koeln stylized logo in typical dark theme coding environment colors"
       class="ONavBar__logo"
-      height="33px"
+      height="33"
       loading="eager"
       src="/images/barthy_logo.svg"
       title="barthy.koeln | Software Engineering"
-      width="256px"
+      width="256"
     >
 
     <div class="ONavBar__nav">
@@ -17,10 +17,10 @@
 </template>
 
 <script lang="ts" setup>
-  import { content } from '../../context/content.ts'
-  import MNavList from '../molecules/MNavList.vue'
+import { content } from '../../context/content.ts'
+import MNavList from '../molecules/MNavList.vue'
 
-  const { contact } = content
+const { contact } = content
 </script>
 
 <style lang="scss">

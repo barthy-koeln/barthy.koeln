@@ -1,0 +1,26 @@
+# Person profile data for RDFa schema.org markup
+
+givenName: "Barthélémy"
+familyName: "Bonhomme"
+alternateName: "Barthy"
+pronouns: "He/Him"
+phoneticName: "/bɑːɹtɪ/"
+languages:
+  native:
+    - name: "French"
+      code: "fr"
+    - name: "German"
+      code: "de"
+  fluent:
+    - name: "English"
+      code: "en"
+nationality:
+  label: "EU Citizen"
+  content: "DE"
+relocationStatus: " — happy to relocate within few months."
+knowsAbout:
+  - "Audio production (Ableton Live)"
+  - "Audio Effects Plugin Development (C++, JUCE)"
+  - "Microcontroller programming (C)"
+  - "3D design (CAD, Blender)"
+  - "3D printing (self-built machine, open source slicers)"

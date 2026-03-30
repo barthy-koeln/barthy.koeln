@@ -4,81 +4,141 @@
     column
     print-spacious
   >
-    <h2>Curriculum Vitae</h2>
+    <h2
+      property="schema:jobTitle"
+    >
+      Experience
+    </h2>
 
-    <MCurriculumEntry date="Oct 2024 – Present">
-      <MCurriculumEntryTitle
-        organization="Electronic Arts"
-        position="Software Engineer III"
-        tech-stack="Next.js/React/TypeScript, GDScript/Godot C++"
-      />
+    <template
+      v-for="job in content.jobs"
+      :key="job.employer"
+    >
+      <MCurriculumEntry
+        :date="getJobDateRange(job)"
+        property="schema:employer"
+      >
+        <MCurriculumEntryTitle
+          :organization="job.employer"
+          :position="job.jobTitle"
+          :tech-stack="job.techStack ? job.techStack.join(', ') : ''"
+        />
 
-      <p>
-        <strong>Ventures & Exploration:</strong>
+        <p property="schema:description">
+          <strong>{{ job.description }}</strong>
 
-        <br/>
+          <br/>
+        </p>
 
-        Senior position in an agile team exploring new technologies.<br>
-        Projects range from internal demos and prototypes to production-ready features for EA's games and services.
-      </p>
+        <template
+          v-if="job.industry"
+        >
+          <p property="schema:industry">
+            <strong>{{ job.industry }}</strong>
+          </p>
+        </template>
 
-      <ul>
-        <li>Set up a knowledge exchange platform and filled it following the Diátaxis framework.</li>
+        <template
+          v-if="job.occupation"
+        >
+          <p property="schema:occupation">
+            <strong>{{ job.occupation }}</strong>
+          </p>
+        </template>
 
-        <li>Exploration and choice of technologies</li>
+        <template
+          v-if="job.responsibilities || job.achievements"
+        >
+          <ul>
+            <template
+              v-for="item in job.responsibilities || job.achievements"
+              :key="item"
+            >
+              <li>{{ item }}</li>
+            </template>
+          </ul>
+        </template>
+      </MCurriculumEntry>
+    </template>
 
-        <li>Coaching of up to 3 Software Engineer II</li>
+    <template
+      v-for="edu in content.education"
+      :key="edu.name"
+    >
+      <MCurriculumEntry
+        :date="getJobDateRange(edu)"
+        typeof="schema:EducationalOccupationalCredential"
+        property="schema:credentialName"
+      >
+        <MCurriculumEntryTitle
+          :organization="edu.credentialIssuer"
+          :position="edu.credentialName"
+          :tech-stack="edu.description"
+        />
 
-        <li>"you build it, you run it" DevOps, PlatformOps, Monitoring</li>
-      </ul>
-    </MCurriculumEntry>
+        <p
+          property="schema:credentialStart"
+        >
+          {{ edu.credentialStart }}
+        </p>
 
-    <MCurriculumEntry date="2023 – 2024">
-      <MCurriculumEntryTitle
-        organization="grandcentrix GmbH (Vodafone Group)"
-        position="Senior Web Developer"
-        tech-stack="Node.js, Vue.js/TypeScript"
-      />
+        <template
+          v-if="edu.credentialEnd"
+        >
+          <p
+            property="schema:credentialEnd"
+          >
+            {{ edu.credentialEnd }}
+          </p>
+        </template>
 
-      <p>
-        Senior position taking ownership of frontend development and coordination with embedded and backend development
-        for an
-        <a href="https://www.vodafone.de/business/loesungen/modbus-cloud-connect/" target="_blank" rel="noopener">
-          IoT fleet management platform.
-        </a>
-
-        <br>
-      </p>
-
-      <ul>
-        <li>Reduced page load times by 90% by enforcing strict coding guidelines, code reuse, and minimizing
-          dependencies.
-        </li>
-
-        <li>Continuously improved e2e tests, reducing regression errors despite large refactoring.</li>
-
-        <li>Empowered interdisciplinary exchange & planning through structured RFCs.</li>
-
-        <li>Spun up a second product front-end within weeks thanks to loosely coupled architecture and reusable
-          components.
-        </li>
-
-        <li>
-          Created a bandwidth consumption calculator:<br/>
-
-          Data transmitted in IIoT application based on user config, firmware logic, data encoding and UDP transport.
-          Calculations included application alert and network condition simulation, validated against real-world measurements.<br/>
-
-          Used in customer-facing UI and as a basis for billing and capacity planning.
-        </li>
-      </ul>
-    </MCurriculumEntry>
+        <p
+          property="schema:description"
+        >
+          {{ edu.description }}
+        </p>
+      </MCurriculumEntry>
+    </template>
   </TFlex>
 </template>
 
-<script lang="ts" setup>
-  import MCurriculumEntry from '../molecules/MCurriculumEntry.vue'
-  import MCurriculumEntryTitle from '../molecules/MCurriculumEntryTitle.vue'
-  import TFlex from '../templates/TFlex.vue'
+<script
+  lang="ts"
+  setup
+>
+import { content } from '../../context/content.ts'
+import MCurriculumEntry from '../molecules/MCurriculumEntry.vue'
+import MCurriculumEntryTitle from '../molecules/MCurriculumEntryTitle.vue'
+import TFlex from '../templates/TFlex.vue'
+import type { SchemaEducation, SchemaJob } from '../../types/website'
+
+/**
+ * Get date range string from start and end dates.
+ * @param entity - Job or education entity with startDate and endDate
+ * @returns Formatted date range string or current status
+ */
+function getJobDateRange (entity: SchemaJob | SchemaEducation): string {
+  if ('startDate' in entity && 'endDate' in entity) {
+    const start = entity.startDate
+    const end = entity.endDate ?? 'Present'
+    return `${start} – ${end}`
+  }
+
+  if ('credentialStart' in entity && 'credentialEnd' in entity) {
+    const start = entity.credentialStart
+    const end = entity.credentialEnd ?? 'Present'
+    return `${start} – ${end}`
+  }
+
+  return ''
+}
 </script>
+
+<style lang="scss">
+.OCurriculum {
+  &__entry {
+    margin-bottom: var(--spacer-md);
+  }
+}
+</style>
 

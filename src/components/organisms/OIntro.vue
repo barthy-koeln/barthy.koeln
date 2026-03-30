@@ -8,6 +8,7 @@
       src="/images/barthy_mew-small.webp"
       title="Barthy & Mew the cat"
       width="512"
+      property="schema:image"
     >
 
     <TFlex
@@ -15,9 +16,30 @@
       column
     >
       <h1>
-        Barth&eacute;l&eacute;my&nbsp;Bonhomme<br>
+        <span property="schema:givenName">{{ person.givenName }}</span>
+        &nbsp;
+        <span property="schema:familyName">{{ person.familyName }}</span>
 
-        (Barthy <em>/bɑːɹtɪ/</em>)
+        <br>
+
+        (<span
+        typeof="schema:PronounceableText"
+        property="schema:alternateName"
+      >
+          <span property="schema:textValue">{{ person.alternateName }}</span>
+          &nbsp;
+          <em property="schema:phoneticText">{{ person.phoneticName }}</em>
+        
+          <meta
+            property="schema:speechToTextMarkup"
+            content="IPA"
+          />
+
+          <meta
+            property="schema:inLanguage"
+            content="de-DE"
+          />
+        </span>)
       </h1>
 
       <hr>
@@ -30,15 +52,47 @@
         </QNoPrint>
 
         <div>
-          He/Him (Er/Ihm)<br>
+          <span property="schema:pronouns">{{ person.pronouns }}</span>
 
-          <strong>EU Citizen</strong>
+          <br>
 
-          happy to relocate within few months.<br>
+          <strong
+            property="schema:nationality"
+            typeof="schema:Country"
+          >
+            <span
+              property="schema:name"
+              :content="person.nationality.content"
+            >
+              {{ person.nationality.label }}
+            </span>
+          </strong>
 
-          <strong>Fluent in</strong>
+          {{ person.relocationStatus }}<br>
 
-           French&nbsp;&amp;&nbsp;German&nbsp;(Native), English&nbsp;(C1)
+          <strong>Fluent in</strong>&nbsp;
+
+          <template
+            v-for="(language, index) in person.languages.native"
+            :key="language.code"
+          >
+            <span property="schema:knowsLanguage">{{ language.name }}</span>
+
+            <template v-if="index < person.languages.native.length - 1">
+              &nbsp;&amp;&nbsp;
+            </template>
+          </template>&nbsp;(Native),
+
+          <template
+            v-for="(language, index) in person.languages.fluent"
+            :key="language.code"
+          >
+            <span property="schema:knowsLanguage">{{ language.name }}</span>
+
+            <template v-if="index < person.languages.fluent.length - 1">
+              &nbsp;&amp;&nbsp;
+            </template>
+          </template>&nbsp;(C1)
         </div>
       </div>
 
@@ -58,55 +112,58 @@
   </TFlex>
 </template>
 
-<script lang="ts" setup>
-  import { content } from '../../context/content.ts'
-  import ASocialLink from '../atoms/ASocialLink.vue'
-  import MNavListPrint from '../molecules/MNavListPrint.vue'
-  import QNoPrint from '../quarks/QNoPrint.vue'
-  import TFlex from '../templates/TFlex.vue'
+<script
+  lang="ts"
+  setup
+>
+import { content } from '../../context/content.ts'
+import ASocialLink from '../atoms/ASocialLink.vue'
+import MNavListPrint from '../molecules/MNavListPrint.vue'
+import QNoPrint from '../quarks/QNoPrint.vue'
+import TFlex from '../templates/TFlex.vue'
 
-  const { socialLinks } = content
+const { socialLinks, person } = content
 </script>
 
 <style lang="scss">
-  .OIntro {
-    flex-wrap: nowrap;
+.OIntro {
+  flex-wrap: nowrap;
 
-    &__content {
-      flex-grow: 0;
-      flex-shrink: 1;
-      text-align: start;
+  &__content {
+    flex-grow: 0;
+    flex-shrink: 1;
+    text-align: start;
 
-      h1 em {
-        color: var(--color-light);
-        font-style: normal;
-      }
-    }
-
-    &__img {
-      height: auto;
-      max-width: 512px;
-      object-fit: contain;
-      width: 100%;
-
-      @media print {
-        max-width: 264px;
-      }
-    }
-
-    &__links {
-      display: flex;
-      gap: var(--spacer-sm);
-      list-style-type: none;
-    }
-
-    &__brief {
-      @media print {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        max-height: 5lh;
-      }
+    h1 em {
+      color: var(--color-light);
+      font-style: normal;
     }
   }
+
+  &__img {
+    height: auto;
+    max-width: 512px;
+    object-fit: contain;
+    width: 100%;
+
+    @media print {
+      max-width: 264px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: var(--spacer-sm);
+    list-style-type: none;
+  }
+
+  &__brief {
+    @media print {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-height: 5lh;
+    }
+  }
+}
 </style>

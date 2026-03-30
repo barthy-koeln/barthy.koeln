@@ -11,23 +11,26 @@
   </ol>
 </template>
 
-<script lang="ts" setup>
-  import type { NavLink } from '../../types/website'
-  import ANavLinkPrint from '../atoms/AContatctLinkPrint.vue'
+<script
+  lang="ts"
+  setup
+>
+import type { NavLink } from '../../types/website'
+import ANavLinkPrint from '../atoms/AContatctLinkPrint.vue'
 
-  defineProps<{
-    links: NavLink[]
-  }>()
+defineProps<{
+  links: NavLink[]
+}>()
 </script>
 
 <style lang="scss">
-  .MNavListPrint {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
+.MNavListPrint {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
 
-    li {
-      display: inline;
-    }
+  li {
+    display: inline;
   }
+}
 </style>

@@ -11,22 +11,25 @@
   </ol>
 </template>
 
-<script lang="ts" setup>
-  import type { NavLink } from '../../types/website'
-  import ANavLink from '../atoms/ANavLink.vue'
+<script
+  lang="ts"
+  setup
+>
+import type { NavLink } from '../../types/website'
+import ANavLink from '../atoms/ANavLink.vue'
 
-  defineProps<{
-    links: NavLink[]
-  }>()
+defineProps<{
+  links: NavLink[]
+}>()
 </script>
 
 <style lang="scss">
-  .MNavList {
-    display: flex;
-    list-style-type: none;
+.MNavList {
+  display: flex;
+  list-style-type: none;
 
-    li {
-      display: inline;
-    }
+  li {
+    display: inline;
   }
+}
 </style>

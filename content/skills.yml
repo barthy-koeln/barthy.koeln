@@ -76,26 +76,46 @@ emerging:
 
 personal:
   - name: C
-    years: -7
+    years: 7
   - name: C++
-    years: -7
+    years: 7
   - name: JUCE
-    years: -5
+    years: 5
   - name: Java
-    years: -7
+    years: 7
   - name: Android SDK
-    years: -7
+    years: 7
   - name: Ableton Live
-    years: -10
+    years: 10
   - name: Audio Production
-    years: -10
+    years: 10
   - name: 3D-Printing & CAD
-    years: -10
+    years: 10
   - name: Blender
-    years: -5
+    years: 5
   - name: Adobe Photoshop
-    years: -10
+    years: 10
   - name: Adobe Illustrator
-    years: -10
+    years: 10
   - name: OpenSCAD
-    years: -5
+    years: 5
+  - name: MQTT
+    years: 6
+  - name: Websockets
+    years: 6
+  - name: Virtual Reality
+    years: 6
+  - name: GDScript
+    years: 4
+  - name: Godot Engine
+    years: 4
+  - name: GDNative / Godot C++ modules
+    years: 4
+  - name: Godot build system
+    years: 4
+  - name: Diátaxis
+    years: 3
+  - name: Cursor
+    years: 2
+  - name: AI Coding Agents
+    years: 2

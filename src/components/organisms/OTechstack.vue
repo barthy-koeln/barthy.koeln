@@ -3,56 +3,109 @@
     class="OTechstack"
     column
   >
-    <span class="OTechstack__heading">
+    <div class="OTechstack__heading">
       <h3>Core competencies</h3>
 
       <AComment>(10+ years)</AComment>
-    </span>
+    </div>
 
-    <MSkillsList :skill-groups="core"/>
+    <template
+      v-for="skill in core"
+      :key="skill.name"
+    >
+      <div
+        typeof="schema:Application"
+        property="schema:name"
+      >
+        <MSkillsList
+          :skill-groups="[skill]"
+        />
+      </div>
+    </template>
 
-    <span class="OTechstack__heading">
+    <div class="OTechstack__heading">
       <h3>Specialized</h3>
 
       <AComment>(6+ years)</AComment>
-    </span>
+    </div>
 
-    <MSkillsList :skill-groups="specialized"/>
+    <template
+      v-for="skill in specialized"
+      :key="skill.name"
+    >
+      <div
+        typeof="schema:SoftwareApplication"
+        property="schema:name"
+      >
+        <MSkillsList
+          :skill-groups="[skill]"
+        />
+      </div>
+    </template>
 
-    <span class="OTechstack__heading">
+    <div class="OTechstack__heading">
       <h3>Emerging</h3>
 
       <AComment>(1-2 years)</AComment>
-    </span>
+    </div>
 
-    <MSkillsList :skill-groups="emerging"/>
+    <template
+      v-for="skill in emerging"
+      :key="skill.name"
+    >
+      <div
+        typeof="schema:SoftwareApplication"
+        property="schema:name"
+      >
+        <MSkillsList
+          :skill-groups="[skill]"
+        />
+      </div>
+    </template>
 
     <h3>Other interests</h3>
 
-    <p>Audio production (Ableton Live), Audio Effects Plugin Development (C++, JUCE), Microcontroller programming (C),
-      3D design (CAD, Blender), 3D printing (self-built machine, open source slicers).</p>
+    <p>
+      <template
+        v-for="(interest, index) in person.knowsAbout"
+        :key="interest"
+      >
+        <span property="schema:knowsAbout">
+          {{ interest }}
+        </span>
+
+        <template v-if="index < person.knowsAbout.length - 1">, </template>
+      </template>
+    </p>
   </TFlex>
 </template>
 
-<script setup lang="ts">
-  import { content } from '../../context/content.ts'
-  import AComment from '../atoms/AComment.vue'
-  import MSkillsList from '../molecules/MSkillsList.vue'
-  import TFlex from '../templates/TFlex.vue'
+<script
+  setup
+  lang="ts"
+>
+import { content } from '../../context/content.ts'
+import AComment from '../atoms/AComment.vue'
+import MSkillsList from '../molecules/MSkillsList.vue'
+import TFlex from '../templates/TFlex.vue'
 
-  const {
-    skills: {
-      core,
-      specialized,
-      emerging,
-    },
-  } = content
+const {
+  person,
+  skills: {
+    core,
+    specialized,
+    emerging,
+  },
+} = content
 </script>
 
-<style lang="scss" scoped>
-  .OTechstack {
-    &__heading {
-      display: flex;
-    }
+<style
+  lang="scss"
+  scoped
+>
+.OTechstack {
+  &__heading {
+    display: flex;
   }
+}
 </style>

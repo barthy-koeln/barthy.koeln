@@ -1,0 +1,126 @@
+# Work experience data for RDFa schema.org markup
+
+jobs:
+  - employer: "Electronic Arts"
+    jobTitle: "Software Engineer III"
+    startDate: "2024-10"
+    endDate: null
+    address:
+      city: "Köln"
+      country: "DE"
+    description: "Senior position in an agile team exploring new technologies. Projects range from internal demos and prototypes to production-ready features for EA's games and services."
+    industry: "Gaming"
+    occupation: "Software Engineering"
+    responsibilities:
+      - "Set up a knowledge exchange platform and filled it following the Diátaxis framework"
+      - "Exploration and choice of technologies"
+      - "Coaching of up to 3 Software Engineer II"
+      - "DevOps, PlatformOps, Monitoring with you build it, you run it approach"
+    techStack:
+      - "Next.js"
+      - "React"
+      - "TypeScript"
+      - "GDScript"
+      - "Godot C++"
+
+  - employer: "grandcentrix GmbH (Vodafone Group)"
+    jobTitle: "Senior Web Developer"
+    startDate: "2023"
+    endDate: "2024"
+    address:
+      city: "Köln"
+      country: "DE"
+    description: "Senior position taking ownership of frontend development and coordination with embedded and backend development for an IoT fleet management platform."
+    industry: "IoT"
+    occupation: "Web Development"
+    achievements:
+      - "Reduced page load times by 90% by enforcing strict coding guidelines, code reuse, and minimizing dependencies"
+      - "Continuously improved e2e tests, reducing regression errors despite large refactoring"
+      - "Empowered interdisciplinary exchange and planning through structured RFCs"
+      - "Spun up a second product front-end within weeks thanks to loosely coupled architecture and reusable components"
+      - "Created a bandwidth consumption calculator for IIoT application based on user config, firmware logic, data encoding and UDP transport"
+    techStack:
+      - "Node.js"
+      - "Vue.js"
+      - "TypeScript"
+
+  - employer: "VUCX GmbH"
+    jobTitle: "Head of Development"
+    startDate: "2020"
+    endDate: "2023"
+    address:
+      city: "Köln"
+      country: "DE"
+    description: "Led a development team within a full-service media and software agency."
+    industry: "Media & Software"
+    occupation: "Software Engineering"
+    responsibilities:
+      - "Led large-scale migration of public sector data into custom GDPR-compliant CMS"
+      - "Developed interactive and discoverable search engines for ~1M daily visitors"
+      - "Migrated monolithic servers to modern containerized cloud deployments"
+      - "Architected and implemented multi-tenant / multi-site distributed CMs"
+      - "Coached a developer now promoted to Software Engineer II"
+      - "Consulted international clients and third-party agencies"
+    techStack:
+      - "Symfony PHP"
+      - "Vue.js"
+      - "TypeScript"
+
+  - employer: "VUCX GmbH"
+    jobTitle: "Working Student Web Development"
+    startDate: "2014"
+    endDate: "2020"
+    address:
+      city: "Köln"
+      country: "DE"
+    description: "Learning by doing from hobbyist to full stack web developer. Later employed as head of development."
+    industry: "Media & Software"
+    occupation: "Web Development"
+    techStack:
+      - "Symfony PHP"
+      - "Vue.js"
+      - "JavaScript"
+
+  - employer: "keinegrenzen.org"
+    jobTitle: "Founder and Developer"
+    startDate: "2014"
+    endDate: "2020"
+    address:
+      city: "Köln"
+      country: "DE"
+    description: "Charitable online platform exchanging underground artists' music for donations to Doctors without Borders. The project has collected and donated around 5.000€. Developed a browsing, streaming and downloads website. Produced several artist profile videos. Organized several concerts and a festival."
+    industry: "Non-profit"
+    occupation: "Web Development"
+    achievements:
+      - "Developed a browsing, streaming and downloads website"
+      - "Produced several artist profile videos"
+      - "Organized several concerts and a festival"
+    techStack:
+      - "Symfony PHP"
+      - "Vue.js"
+      - "JavaScript"
+
+  - employer: "Freelance"
+    jobTitle: "Web Development"
+    startDate: "2014"
+    endDate: null
+    address:
+      city: "Köln"
+      country: "DE"
+    description: "Development, hosting, and maintenance of portfolio websites and interactive 3D experiences. Services: Consulting, 3D & VR hosting solutions, Hosting and maintenance."
+    industry: "Freelance"
+    occupation: "Web Development"
+    techStack:
+      - "Symfony PHP"
+      - "Vue.js"
+      - "TypeScript"
+
+  - employer: "Alexianer Werkstätten GmbH"
+    jobTitle: "Voluntary service"
+    startDate: "2013"
+    endDate: "2014"
+    address:
+      city: "Köln"
+      country: "DE"
+    industry: "Social Services"
+    occupation: "Voluntary Service"
