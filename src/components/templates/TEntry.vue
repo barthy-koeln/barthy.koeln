@@ -2,10 +2,12 @@
   <TFlex
     class="TEntry"
   >
-    <div class="TEntry__date">
+    <div
+      class="TEntry__date"
+      :resource="resource"
+    >
       <template v-if="parsedEnd">
         <span
-          :resource="resource"
           :property="isJob ? 'schema:endDate' : 'schema:dateCreated'"
           :content="parsedEnd.toISOString().split('T')[0]"
         >
@@ -20,7 +22,6 @@
       &nbsp;&mdash;<br/>
 
       <span
-        :resource="resource"
         :property="isJob ? 'schema:startDate' : undefined"
         :content="parsedStart.toISOString().split('T')[0]"
       >

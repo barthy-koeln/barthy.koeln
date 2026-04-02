@@ -17,11 +17,6 @@
             typeof="schema:EmployeeRole"
           >
             <mark property="schema:roleName">{{ job.roleName }}</mark>
-
-            <meta
-              :content="job.endDate"
-              property="schema:endDate"
-            />
           </div>
         </div>
       </template>
@@ -34,11 +29,6 @@
             typeof="schema:EmployeeRole"
           >
             <mark property="schema:roleName">{{ job.roleName }}</mark>
-
-            <meta
-              :content="job.startDate"
-              property="schema:startDate"
-            />
           </div>
         </div>
       </template>
