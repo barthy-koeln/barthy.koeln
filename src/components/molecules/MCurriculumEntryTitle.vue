@@ -33,13 +33,16 @@
         </div>
       </template>
 
-      @ <a
-      :href="job.url"
-      class="ACurriculumEntryTitle__org"
-      property="schema:sameAs"
-    >
-      <span property="schema:name">{{ job.employer }}</span>
-    </a>
+      <div>
+        @
+        <a
+          :href="job.url"
+          class="ACurriculumEntryTitle__org"
+          property="schema:sameAs"
+        >
+          <span property="schema:name">{{ job.employer }}</span>
+        </a>
+      </div>
     </h3>
 
     <template v-if="job.techStack?.length">
@@ -80,9 +83,8 @@ const { person } = content
   gap: var(--spacer-sm);
 
   &__title {
-    align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: var(--spacer-xs);
     width: 100%;
 

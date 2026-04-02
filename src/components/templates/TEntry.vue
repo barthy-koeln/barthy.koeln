@@ -19,7 +19,7 @@
         <span>Present</span>
       </template>
 
-      &nbsp;&mdash;<br/>
+      &nbsp;&mdash;&nbsp;<br/>
 
       <span
         :property="isJob ? 'schema:startDate' : undefined"
@@ -93,7 +93,6 @@ const formattedEnd = computed(() => {
     font-size: var(--fontsize-3);
     font-weight: bold;
     height: 100%;
-    padding: var(--spacer-md);
     position: sticky;
     top: 0;
     width: 100%;
@@ -104,9 +103,8 @@ const formattedEnd = computed(() => {
     }
 
     @include desktop {
-      padding: 0;
       top: var(--spacer-md);
-      width: 128px;
+      width: 132px;
     }
 
     @media print {
