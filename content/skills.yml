@@ -4,6 +4,7 @@ core:
       - Git
       - Linux
       - Bash/Shell
+      - Agile Methods
   - name: Backend
     skills:
       - PHP
@@ -75,47 +76,25 @@ emerging:
       - AI Coding Agents
 
 personal:
-  - name: C
-    years: 7
-  - name: C++
-    years: 7
-  - name: JUCE
-    years: 5
-  - name: Java
-    years: 7
-  - name: Android SDK
-    years: 7
-  - name: Ableton Live
-    years: 10
-  - name: Audio Production
-    years: 10
-  - name: 3D-Printing & CAD
-    years: 10
-  - name: Blender
-    years: 5
-  - name: Adobe Photoshop
-    years: 10
-  - name: Adobe Illustrator
-    years: 10
-  - name: OpenSCAD
-    years: 5
-  - name: MQTT
-    years: 6
-  - name: Websockets
-    years: 6
-  - name: Virtual Reality
-    years: 6
-  - name: GDScript
-    years: 4
-  - name: Godot Engine
-    years: 4
-  - name: GDNative / Godot C++ modules
-    years: 4
-  - name: Godot build system
-    years: 4
-  - name: Diátaxis
-    years: 3
-  - name: Cursor
-    years: 2
-  - name: AI Coding Agents
-    years: 2
+  - "Audio production (Ableton Live)"
+  - "Audio Effects Plugin Development (C++, JUCE)"
+  - "Microcontroller programming (C)"
+  - "3D design (CAD, Blender)"
+  - "3D printing (self-built machine, open source slicers)"
+
+capabilities:
+  - - "Concept and ideation, exploration and presentation"
+    - "Development in agile and interdisciplinary teams"
+  - - "Abstract understanding of programming languages and frameworks"
+    - "Efficient and effective application of knowledge to new technologies"
+    - "Fast reading and understanding of documentation and forums"
+    - "Reviews and constructive criticism"
+    - "Sharing of knowledge and coaching"
+    - "Linting, code quality tools and package managers"
+    - "Unit-, functional- and E2E testing"
+    - "Software and data security"
+    - "Performance, distributed tracing, monitoring"
+  - - "Platform operations and architecture management"
+    - "Accessibility and inclusivity considerations"
+    - "Database and search engines"
+    - "Game engines and multiplayer netcode"

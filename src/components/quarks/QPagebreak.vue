@@ -1,4 +1,7 @@
-<script setup lang="ts">
+<script
+  lang="ts"
+  setup
+>
 
 </script>
 
@@ -7,15 +10,15 @@
 </template>
 
 <style lang="scss">
-  @media print {
-    .QPagebreak {
-      break-before: page;
-    }
+@media print {
+  .QPagebreak {
+    break-before: page;
   }
+}
 
-  @media screen {
-    .QPagebreak {
-      display: none;
-    }
+@media screen {
+  .QPagebreak {
+    display: none;
   }
+}
 </style>

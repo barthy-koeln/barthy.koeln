@@ -20,28 +20,31 @@
   </a>
 </template>
 
-<script lang="ts" setup>
+<script
+  lang="ts"
+  setup
+>
 import TFlex from '../templates/TFlex.vue'
 </script>
 
 <style lang="scss">
-  .AGithubCTA {
-    &__content {
-      align-items: center;
-      background-color: var(--color-accent-dark);
-      color: var(--color-light);
-      font-size: var(--fontsize-1);
-      justify-content: flex-end;
-      padding: var(--spacer-lg);
-      width: 100%;
-    }
-
-    &__icon {
-      filter: invert(94%) sepia(42%) saturate(7007%) hue-rotate(310deg) brightness(99%) contrast(85%);
-    }
-
-    &:hover {
-      text-decoration-color: var(--color-light);
-    }
+.AGithubCTA {
+  &__content {
+    align-items: center;
+    background-color: var(--color-accent-dark);
+    color: var(--color-light);
+    font-size: var(--fontsize-1);
+    justify-content: flex-end;
+    padding: var(--spacer-lg);
+    width: 100%;
   }
+
+  &__icon {
+    filter: invert(94%) sepia(42%) saturate(7007%) hue-rotate(310deg) brightness(99%) contrast(85%);
+  }
+
+  &:hover {
+    text-decoration-color: var(--color-light);
+  }
+}
 </style>

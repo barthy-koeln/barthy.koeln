@@ -14,6 +14,9 @@ import QNoPrint from '../components/quarks/QNoPrint.vue'
 import QPagebreak from '../components/quarks/QPagebreak.vue'
 import OTechstack from '../components/organisms/OTechstack.vue'
 import MGenerativeLines from '../components/molecules/MGenerativeLines.vue'
+import { content } from '../context/content.ts'
+
+const { person } = content
 ---
 
 <Layout>
@@ -21,6 +24,8 @@ import MGenerativeLines from '../components/molecules/MGenerativeLines.vue'
     column={true}
     spacious={true}
     typeof="schema:Person"
+    id="barthy"
+    resource={person.id}
   >
     <OFloatingNav/>
 
@@ -31,10 +36,6 @@ import MGenerativeLines from '../components/molecules/MGenerativeLines.vue'
     <hr>
 
     <OCurriculumPrimary id="curriculum"/>
-
-    <QNoPrint>
-      <hr>
-    </QNoPrint>
 
     <QPagebreak/>
 

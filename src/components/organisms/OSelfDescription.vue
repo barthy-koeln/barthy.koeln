@@ -2,6 +2,7 @@
   <TFlex
     class="OSelfDescription"
     column
+    property="schema:description"
   >
     <p>
       Software Engineer with 10+ years full-stack expertise and a proven track record leading teams, implementing best
@@ -11,12 +12,15 @@
   </TFlex>
 </template>
 
-<script lang="ts" setup>
-  import TFlex from '../templates/TFlex.vue'
+<script
+  lang="ts"
+  setup
+>
+import TFlex from '../templates/TFlex.vue'
 </script>
 
 <style lang="scss">
-  .OSelfDescription {
-    font-size: var(--fontsize-3);
-  }
+.OSelfDescription {
+  font-size: var(--fontsize-3);
+}
 </style>

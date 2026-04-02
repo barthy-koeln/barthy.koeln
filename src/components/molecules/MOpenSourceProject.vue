@@ -47,31 +47,34 @@
   </TFlex>
 </template>
 
-<script lang="ts" setup>
-  import type { OpenSourceProject } from '../../types/website'
-  import TFlex from '../templates/TFlex.vue'
+<script
+  lang="ts"
+  setup
+>
+import type { OpenSourceProject } from '../../types/website'
+import TFlex from '../templates/TFlex.vue'
 
-  defineProps<{
-    project: OpenSourceProject
-  }>()
+defineProps<{
+  project: OpenSourceProject
+}>()
 </script>
 
 <style lang="scss">
-  .MOpenSourceProject {
-    &__imageWrapper {
-      width: 100%;
-    }
-
-    &__imageLink {
-      display: block;
-      width: 100%;
-    }
-
-    &__image {
-      border: 2px dashed var(--color-accent);
-      display: block;
-      height: auto;
-      width: 100%;
-    }
+.MOpenSourceProject {
+  &__imageWrapper {
+    width: 100%;
   }
+
+  &__imageLink {
+    display: block;
+    width: 100%;
+  }
+
+  &__image {
+    border: 2px dashed var(--color-accent);
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
 </style>

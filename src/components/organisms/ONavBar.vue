@@ -16,7 +16,10 @@
   </nav>
 </template>
 
-<script lang="ts" setup>
+<script
+  lang="ts"
+  setup
+>
 import { content } from '../../context/content.ts'
 import MNavList from '../molecules/MNavList.vue'
 
@@ -24,27 +27,27 @@ const { contact } = content
 </script>
 
 <style lang="scss">
-  @use "../../variables" as *;
+@use "../../variables" as *;
 
-  .ONavBar {
-    align-items: center;
-    background-color: var(--color-black);
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: space-between;
-    padding: 2rem;
+.ONavBar {
+  align-items: center;
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 2rem;
 
-    @include desktop {
-      flex-direction: row;
-    }
-
-    @media print {
-      display: none;
-    }
-
-    &__logo {
-      max-width: 50vw;
-    }
+  @include desktop {
+    flex-direction: row;
   }
+
+  @media print {
+    display: none;
+  }
+
+  &__logo {
+    max-width: 50vw;
+  }
+}
 </style>

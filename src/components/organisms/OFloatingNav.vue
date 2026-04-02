@@ -13,49 +13,52 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-  import { content } from '../../context/content.ts'
+<script
+  lang="ts"
+  setup
+>
+import { content } from '../../context/content.ts'
 
-  const { links } = content
+const { links } = content
 </script>
 
 <style lang="scss">
-  @use "../../variables" as *;
+@use "../../variables" as *;
 
-  .OFloatingNav {
-    background-color: var(--color-background);
-    height: 100%;
-    left: calc(-1 * var(--spacer-lg));
-    padding: var(--spacer);
-    position: absolute;
-    top: 0;
-    transform: translateX(-100%);
-    z-index: 1000;
+.OFloatingNav {
+  background-color: var(--color-background);
+  height: 100%;
+  left: calc(-1 * var(--spacer-lg));
+  padding: var(--spacer);
+  position: absolute;
+  top: 0;
+  transform: translateX(-100%);
+  z-index: 1000;
 
+  &:focus,
+  &:focus-within {
+    transform: translateX(var(--spacer));
+  }
+
+  @include desktop {
+    &,
     &:focus,
     &:focus-within {
-      transform: translateX(var(--spacer));
-    }
-
-    @include desktop {
-      &,
-      &:focus,
-      &:focus-within {
-        transform: translateX(-100%);
-      }
-    }
-
-    @media print {
-      display: none;
-    }
-
-    &__list {
-      display: flex;
-      flex-direction: column;
-      gap: var(--spacer-sm);
-      list-style-type: none;
-      position: sticky;
-      top: var(--spacer-lg)
+      transform: translateX(-100%);
     }
   }
+
+  @media print {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacer-sm);
+    list-style-type: none;
+    position: sticky;
+    top: var(--spacer-lg)
+  }
+}
 </style>

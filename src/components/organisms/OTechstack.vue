@@ -13,14 +13,7 @@
       v-for="skill in core"
       :key="skill.name"
     >
-      <div
-        typeof="schema:Application"
-        property="schema:name"
-      >
-        <MSkillsList
-          :skill-groups="[skill]"
-        />
-      </div>
+      <MSkillsList :skill-groups="[skill]"/>
     </template>
 
     <div class="OTechstack__heading">
@@ -33,14 +26,7 @@
       v-for="skill in specialized"
       :key="skill.name"
     >
-      <div
-        typeof="schema:SoftwareApplication"
-        property="schema:name"
-      >
-        <MSkillsList
-          :skill-groups="[skill]"
-        />
-      </div>
+      <MSkillsList :skill-groups="[skill]"/>
     </template>
 
     <div class="OTechstack__heading">
@@ -53,36 +39,29 @@
       v-for="skill in emerging"
       :key="skill.name"
     >
-      <div
-        typeof="schema:SoftwareApplication"
-        property="schema:name"
-      >
-        <MSkillsList
-          :skill-groups="[skill]"
-        />
-      </div>
+      <MSkillsList :skill-groups="[skill]"/>
     </template>
 
     <h3>Other interests</h3>
 
     <p>
       <template
-        v-for="(interest, index) in person.knowsAbout"
+        v-for="(interest, index) in personal"
         :key="interest"
       >
-        <span property="schema:knowsAbout">
+        <span property="schema:skills">
           {{ interest }}
         </span>
 
-        <template v-if="index < person.knowsAbout.length - 1">, </template>
+        <template v-if="index < personal.length - 1">,</template>
       </template>
     </p>
   </TFlex>
 </template>
 
 <script
-  setup
   lang="ts"
+  setup
 >
 import { content } from '../../context/content.ts'
 import AComment from '../atoms/AComment.vue'
@@ -90,11 +69,11 @@ import MSkillsList from '../molecules/MSkillsList.vue'
 import TFlex from '../templates/TFlex.vue'
 
 const {
-  person,
   skills: {
     core,
     specialized,
     emerging,
+    personal
   },
 } = content
 </script>

@@ -2,20 +2,19 @@
 
 jobs:
   - employer: "Electronic Arts"
-    jobTitle: "Software Engineer III"
-    startDate: "2024-10"
+    roleName: "Software Engineer III"
+    url: "https://ea.com"
+    startDate: '2024-10-01'
     endDate: null
-    address:
-      city: "Köln"
-      country: "DE"
     description: "Senior position in an agile team exploring new technologies. Projects range from internal demos and prototypes to production-ready features for EA's games and services."
-    industry: "Gaming"
+    keywords: "Gaming, Sports Media, Publishing"
     occupation: "Software Engineering"
     responsibilities:
+      - "Modernized Content Publishing CMS with 14k+ existing entries"
+      - "Implemented fast-paced online multiplayer game for handheld"
       - "Set up a knowledge exchange platform and filled it following the Diátaxis framework"
-      - "Exploration and choice of technologies"
-      - "Coaching of up to 3 Software Engineer II"
-      - "DevOps, PlatformOps, Monitoring with you build it, you run it approach"
+      - "Coached of up to 3 Software Engineer II"
+      - "Created agentic review and visual regression tools"
     techStack:
       - "Next.js"
       - "React"
@@ -24,14 +23,12 @@ jobs:
       - "Godot C++"
 
   - employer: "grandcentrix GmbH (Vodafone Group)"
-    jobTitle: "Senior Web Developer"
-    startDate: "2023"
-    endDate: "2024"
-    address:
-      city: "Köln"
-      country: "DE"
+    roleName: "Senior Web Developer"
+    url: "https://web.archive.org/web/20250815053837/https://grandcentrix.net/"
+    startDate: "2023-05-01"
+    endDate: "2024-09-30"
     description: "Senior position taking ownership of frontend development and coordination with embedded and backend development for an IoT fleet management platform."
-    industry: "IoT"
+    keywords: "IoT, Fleet Management"
     occupation: "Web Development"
     achievements:
       - "Reduced page load times by 90% by enforcing strict coding guidelines, code reuse, and minimizing dependencies"
@@ -45,14 +42,12 @@ jobs:
       - "TypeScript"
 
   - employer: "VUCX GmbH"
-    jobTitle: "Head of Development"
-    startDate: "2020"
-    endDate: "2023"
-    address:
-      city: "Köln"
-      country: "DE"
+    roleName: "Head of Development"
+    url: "https://vucx.de"
+    startDate: "2020-08-01"
+    endDate: "2023-04-30"
     description: "Led a development team within a full-service media and software agency."
-    industry: "Media & Software"
+    keywords: "Software, Media, CMS, CRM"
     occupation: "Software Engineering"
     responsibilities:
       - "Led large-scale migration of public sector data into custom GDPR-compliant CMS"
@@ -63,35 +58,35 @@ jobs:
       - "Consulted international clients and third-party agencies"
     techStack:
       - "Symfony PHP"
-      - "Vue.js"
       - "TypeScript"
+      - "Vue.js"
+      - "React"
+      - "Next.js"
 
   - employer: "VUCX GmbH"
-    jobTitle: "Working Student Web Development"
-    startDate: "2014"
-    endDate: "2020"
-    address:
-      city: "Köln"
-      country: "DE"
-    description: "Learning by doing from hobbyist to full stack web developer. Later employed as head of development."
-    industry: "Media & Software"
+    roleName: "Working Student Web Development"
+    url: "https://vucx.de"
+    startDate: "2014-06-01"
+    endDate: "2020-07-31"
+    description: "Hobbyist to full stack web developer."
+    keywords: "Software, Media, CMS, CRM"
     occupation: "Web Development"
     techStack:
       - "Symfony PHP"
       - "Vue.js"
+      - "TypeScript"
       - "JavaScript"
 
   - employer: "keinegrenzen.org"
-    jobTitle: "Founder and Developer"
-    startDate: "2014"
-    endDate: "2020"
-    address:
-      city: "Köln"
-      country: "DE"
-    description: "Charitable online platform exchanging underground artists' music for donations to Doctors without Borders. The project has collected and donated around 5.000€. Developed a browsing, streaming and downloads website. Produced several artist profile videos. Organized several concerts and a festival."
-    industry: "Non-profit"
+    roleName: "Founder and Developer"
+    url: "festival2019.keinegrenzen.org"
+    startDate: "2014-04-04"
+    endDate: "2020-12-31"
+    description: "Charitable online platform exchanging underground artists' music for donations to Doctors without Borders."
+    keywords: "Non-profit, Web, Event-Planning"
     occupation: "Web Development"
     achievements:
+      - "The project has collected and donated around 5.000€"
       - "Developed a browsing, streaming and downloads website"
       - "Produced several artist profile videos"
       - "Organized several concerts and a festival"
@@ -101,26 +96,16 @@ jobs:
       - "JavaScript"
 
   - employer: "Freelance"
-    jobTitle: "Web Development"
-    startDate: "2014"
-    endDate: null
-    address:
-      city: "Köln"
-      country: "DE"
+    roleName: "Web Development"
+    url: "https://barthy.koeln/#freelance"
+    startDate: "2014-01-01"
+    endDate: "2026-02-28"
     description: "Development, hosting, and maintenance of portfolio websites and interactive 3D experiences. Services: Consulting, 3D & VR hosting solutions, Hosting and maintenance."
-    industry: "Freelance"
+    keywords: "Freelance, Web Development, Interactive Experiences"
     occupation: "Web Development"
     techStack:
       - "Symfony PHP"
       - "Vue.js"
       - "TypeScript"
-
-  - employer: "Alexianer Werkstätten GmbH"
-    jobTitle: "Voluntary service"
-    startDate: "2013"
-    endDate: "2014"
-    address:
-      city: "Köln"
-      country: "DE"
-    industry: "Social Services"
-    occupation: "Voluntary Service"
+      - "ThreeJS"
+      - "PayloadCMS"

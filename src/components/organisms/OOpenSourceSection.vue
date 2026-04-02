@@ -3,8 +3,8 @@
     <h2>Open Source Projects</h2>
 
     <template
-        v-for="(project, index) of projects"
-        :key="index"
+      v-for="(project, index) of projects"
+      :key="index"
     >
       <MOpenSourceProject :project="project"/>
 
@@ -18,66 +18,66 @@
 </template>
 
 <script
-    lang="ts"
-    setup
+  lang="ts"
+  setup
 >
-  import type { OpenSourceProject } from '../../types/website'
-  import MOpenSourceProject from '../molecules/MOpenSourceProject.vue'
-  import TFlex from '../templates/TFlex.vue'
+import type { OpenSourceProject } from '../../types/website'
+import MOpenSourceProject from '../molecules/MOpenSourceProject.vue'
+import TFlex from '../templates/TFlex.vue'
 
-  const projects: OpenSourceProject[] = [
-    {
-      title: 'Arbitrary Remote Control System (ARCS)',
-      githubLink: 'https://github.com/arcs-vr/arc-rtc',
-      demoLink: 'https://arcs.barthy.koeln',
+const projects: OpenSourceProject[] = [
+  {
+    title: 'Arbitrary Remote Control System (ARCS)',
+    githubLink: 'https://github.com/arcs-vr/arc-rtc',
+    demoLink: 'https://arcs.barthy.koeln',
 
-      image: {
-        width: 1920,
-        height: 1280,
-        src: '/images/arcs.webp',
-        alt: 'Mockup of two devices using a virtual experience remote control system',
-      },
-
-      paragraphs: [
-        'My bachelor thesis in early 2020 revolved around web and browser based virtual reality experiences, that were made accessible by combining several devices into a single Human Computer Interface (HCI).',
-        'You can use two smartphones, a smartphone and a laptop, or theoretically any connected device to control the VR experience and enjoy all degrees of freedom.',
-        'Front-end: Vue.js v3, Three.js and WebRTC through PeerJS',
-      ],
+    image: {
+      width: 1920,
+      height: 1280,
+      src: '/images/arcs.webp',
+      alt: 'Mockup of two devices using a virtual experience remote control system',
     },
-    {
-      title: 'Scroll-Snap Slider',
-      githubLink: 'https://github.com/barthy-koeln/scroll-snap-slider',
-      demoLink: 'https://scroll-snap-slider.barthy.koeln',
 
-      image: {
-        width: 1360,
-        height: 736,
-        src: '/images/scrollsnap.webp',
-        alt: 'Demo of Scroll-Snap-Slider',
-      },
+    paragraphs: [
+      'My bachelor thesis in early 2020 revolved around web and browser based virtual reality experiences, that were made accessible by combining several devices into a single Human Computer Interface (HCI).',
+      'You can use two smartphones, a smartphone and a laptop, or theoretically any connected device to control the VR experience and enjoy all degrees of freedom.',
+      'Front-end: Vue.js v3, Three.js and WebRTC through PeerJS',
+    ],
+  },
+  {
+    title: 'Scroll-Snap Slider',
+    githubLink: 'https://github.com/barthy-koeln/scroll-snap-slider',
+    demoLink: 'https://scroll-snap-slider.barthy.koeln',
 
-      paragraphs: [
-        'JavaScript enhanced scroll-snapping used for sliders/carousels.',
-        'The goal is to not repeat myself when implementing simple sliders, but also not use one of the huge libraries out there.',
-        'Technologies: TypeScript, ES Modules and Classes',
-      ],
+    image: {
+      width: 1360,
+      height: 736,
+      src: '/images/scrollsnap.webp',
+      alt: 'Demo of Scroll-Snap-Slider',
     },
-    {
-      title: 'Experiment (WIP): Vue.js v3 + Three.js Animation',
-      githubLink: 'https://github.com/barthy-koeln/3d-scroll-experience',
-      demoLink: 'https://barthy-koeln.github.io/3d-scroll-experience/',
 
-      image: {
-        width: 1920,
-        height: 1080,
-        src: '/images/3d-scroll-experience.webp',
-        alt: 'An interactive 3D Environment with scrollable and clickable animations.',
-      },
+    paragraphs: [
+      'JavaScript enhanced scroll-snapping used for sliders/carousels.',
+      'The goal is to not repeat myself when implementing simple sliders, but also not use one of the huge libraries out there.',
+      'Technologies: TypeScript, ES Modules and Classes',
+    ],
+  },
+  {
+    title: 'Experiment (WIP): Vue.js v3 + Three.js Animation',
+    githubLink: 'https://github.com/barthy-koeln/3d-scroll-experience',
+    demoLink: 'https://barthy-koeln.github.io/3d-scroll-experience/',
 
-      paragraphs: [
-        'Scrubbing through a keyframed animation, exploration with WASD/Arrow keys controls, and orbit controls. Interaction and reactivity managed in Vue.js.',
-        'Technologies: Blender, Vue.js v3, Three.js',
-      ],
-    }
-  ]
+    image: {
+      width: 1920,
+      height: 1080,
+      src: '/images/3d-scroll-experience.webp',
+      alt: 'An interactive 3D Environment with scrollable and clickable animations.',
+    },
+
+    paragraphs: [
+      'Scrubbing through a keyframed animation, exploration with WASD/Arrow keys controls, and orbit controls. Interaction and reactivity managed in Vue.js.',
+      'Technologies: Blender, Vue.js v3, Three.js',
+    ],
+  }
+]
 </script>

@@ -18,43 +18,46 @@
   </footer>
 </template>
 
-<script lang="ts" setup>
+<script
+  lang="ts"
+  setup
+>
 </script>
 
 <style lang="scss">
-  @use "../../variables" as *;
+@use "../../variables" as *;
 
-  .OFooter {
-    align-items: center;
-    background-color: var(--color-black);
-    color: var(--color-white);
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 1rem;
-    justify-content: space-between;
-    padding: 2rem;
-    text-align: center;
+.OFooter {
+  align-items: center;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 2rem;
+  text-align: center;
+
+  @include desktop {
+    flex-direction: row;
+  }
+
+  @media print {
+    display: none;
+  }
+
+  &__hints {
+    max-width: 380px;
 
     @include desktop {
-      flex-direction: row;
-    }
-
-    @media print {
-      display: none;
-    }
-
-    &__hints {
-      max-width: 380px;
-
-      @include desktop {
-        text-align: start;
-      }
-    }
-
-    &__imprint {
-      @include desktop {
-        text-align: end;
-      }
+      text-align: start;
     }
   }
+
+  &__imprint {
+    @include desktop {
+      text-align: end;
+    }
+  }
+}
 </style>

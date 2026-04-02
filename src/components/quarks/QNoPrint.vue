@@ -20,28 +20,28 @@
   lang="ts"
   setup
 >
-  defineProps<{
-    tag?: string
-  }>()
+defineProps<{
+  tag?: string
+}>()
 </script>
 
 <style
   lang="scss"
   scoped
 >
-  .QNoPrint {
-    display: contents;
+.QNoPrint {
+  display: contents;
 
-    @media print {
-      display: none;
-    }
-  }
-
-  .QYesPrint {
+  @media print {
     display: none;
-
-    @media print {
-      display: contents;
-    }
   }
+}
+
+.QYesPrint {
+  display: none;
+
+  @media print {
+    display: contents;
+  }
+}
 </style>

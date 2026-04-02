@@ -5,41 +5,40 @@
       class="OIntro__img"
       height="384"
       loading="eager"
+      property="schema:image"
       src="/images/barthy_mew-small.webp"
       title="Barthy & Mew the cat"
       width="512"
-      property="schema:image"
     >
 
     <TFlex
       class="OIntro__content"
       column
     >
-      <h1>
-        <span property="schema:givenName">{{ person.givenName }}</span>
-        &nbsp;
+      <h1 class="OIntro__heading">
+        <span property="schema:givenName">{{ person.givenName }}</span>&nbsp;
+
         <span property="schema:familyName">{{ person.familyName }}</span>
 
-        <br>
+        <span
+          class="OIntro__alternateName"
+          property="schema:alternateName"
+          typeof="schema:PronounceableText"
+        >
+          (<span property="schema:textValue">{{ person.alternateName }}</span>&nbsp;
 
-        (<span
-        typeof="schema:PronounceableText"
-        property="schema:alternateName"
-      >
-          <span property="schema:textValue">{{ person.alternateName }}</span>
-          &nbsp;
-          <em property="schema:phoneticText">{{ person.phoneticName }}</em>
+          <em property="schema:phoneticText">{{ person.phoneticName }}</em>)
         
           <meta
-            property="schema:speechToTextMarkup"
             content="IPA"
+            property="schema:speechToTextMarkup"
           />
 
           <meta
-            property="schema:inLanguage"
             content="de-DE"
+            property="schema:inLanguage"
           />
-        </span>)
+        </span>
       </h1>
 
       <hr>
@@ -61,8 +60,8 @@
             typeof="schema:Country"
           >
             <span
-              property="schema:name"
               :content="person.nationality.content"
+              property="schema:name"
             >
               {{ person.nationality.label }}
             </span>
@@ -70,7 +69,7 @@
 
           {{ person.relocationStatus }}<br>
 
-          <strong>Fluent in</strong>&nbsp;
+          <strong>Fluent in&nbsp;</strong>
 
           <template
             v-for="(language, index) in person.languages.native"
@@ -78,9 +77,7 @@
           >
             <span property="schema:knowsLanguage">{{ language.name }}</span>
 
-            <template v-if="index < person.languages.native.length - 1">
-              &nbsp;&amp;&nbsp;
-            </template>
+            <template v-if="index < person.languages.native.length - 1">&nbsp;&amp;&nbsp;</template>
           </template>&nbsp;(Native),
 
           <template
@@ -133,11 +130,21 @@ const { socialLinks, person } = content
     flex-grow: 0;
     flex-shrink: 1;
     text-align: start;
+  }
 
-    h1 em {
+  &__heading {
+    display: flex;
+    flex-wrap: wrap;
+
+    em {
       color: var(--color-light);
       font-style: normal;
     }
+  }
+
+  &__alternateName {
+    align-items: baseline;
+    display: flex;
   }
 
   &__img {

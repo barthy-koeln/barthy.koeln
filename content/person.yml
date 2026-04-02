@@ -1,8 +1,9 @@
 # Person profile data for RDFa schema.org markup
-
+id: "https://barthy.koeln"
+name: "Barthélémy Bonhomme"
+alternateName: "Barthy"
 givenName: "Barthélémy"
 familyName: "Bonhomme"
-alternateName: "Barthy"
 pronouns: "He/Him"
 phoneticName: "/bɑːɹtɪ/"
 languages:
@@ -17,10 +18,4 @@ languages:
 nationality:
   label: "EU Citizen"
   content: "DE"
-relocationStatus: " — happy to relocate within few months."
-knowsAbout:
-  - "Audio production (Ableton Live)"
-  - "Audio Effects Plugin Development (C++, JUCE)"
-  - "Microcontroller programming (C)"
-  - "3D design (CAD, Blender)"
-  - "3D printing (self-built machine, open source slicers)"
+relocationStatus: " happy to relocate within few months."

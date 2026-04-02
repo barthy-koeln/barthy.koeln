@@ -64,7 +64,7 @@ We will implement the following schema.org types:
 
 5. **Update OIntro.vue**
    - Add `typeof="Person"` to main container
-   - Map profile properties (name, jobTitle, image, etc.)
+   - Map profile properties (name, roleName, image, etc.)
    - Include sameAs links for social profiles
 
 6. **Update OTechstack.vue**

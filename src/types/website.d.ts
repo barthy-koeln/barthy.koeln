@@ -49,6 +49,7 @@ export interface SkillGroup {
 }
 
 export interface SchemaPersonData {
+  id: string
   givenName: string
   familyName: string
   alternateName: string
@@ -69,25 +70,16 @@ export interface SchemaPersonData {
     label: string
     content: string
   }
-  knowsAbout: string[]
-}
-
-export interface SchemaAddress {
-  street?: string
-  city: string
-  region?: string
-  postalCode?: string
-  country?: string
 }
 
 export interface SchemaJob {
   employer: string
-  jobTitle: string
+  roleName: string
+  url: string
   startDate: string
-  endDate?: string
-  address?: SchemaAddress
+  endDate: string | null
   description?: string
-  industry?: string
+  keywords?: string
   techStack?: string[]
   responsibilities?: string[]
   achievements?: string[]
@@ -95,21 +87,22 @@ export interface SchemaJob {
 }
 
 export interface SchemaEducation {
-  name: string
+  url: string
   credentialName: string
-  credentialStart: string
-  credentialEnd: string
+  startDate: string
+  endDate: string
   credentialIssuer: string
-  address?: SchemaAddress
-  description?: string
-  credentialStatus?: string
+  credentialType: string
+  degreeProgram: string
+  specialization: string
+  thesis: string
 }
 
 export interface SchemaCertification {
   name: string
   credentialName: string
-  credentialStart: string
-  credentialEnd: string
+  startDate: string
+  endDate: string
   credentialIssuer: string
   credentialStatus: string
 }
@@ -123,7 +116,9 @@ export interface PageContent {
   skills: {
     core: SkillGroup[],
     specialized: SkillGroup[]
-    emerging: SkillGroup[]
+    emerging: SkillGroup[],
+    personal: string[]
+    capabilities: string[][]
   }
   referenceProjects: ReferenceProject[],
   openSourceProjects: OpenSourceProject[],

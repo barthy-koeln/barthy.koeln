@@ -2,8 +2,8 @@
   <a
     :href="link.target"
     :title="link.label"
-    property="schema:sameAs"
     class="ASocialLink"
+    property="schema:sameAs"
     rel="nofollow noopener"
     target="_blank"
   >

@@ -1,58 +1,52 @@
 <template>
-  <TFlex
-      class="MCurriculumEntry"
-      typeof="schema:WorkInfo"
+  <TEntry
+    :item="job"
+    :property="job.endDate ? 'schema:alumniOf' : 'schema:worksFor'"
+    typeof="schema:Organization"
   >
-    <div class="MCurriculumEntry__date">
-      {{ date }}
-    </div>
+    <MCurriculumEntryTitle :job="job"/>
 
-    <TFlex column>
-      <slot/>
-    </TFlex>
-  </TFlex>
+    <meta
+      :content="job.keywords"
+      property="schema:keywords"
+    />
+
+    <div :resource="`${job.url}-role`">
+      <TFlex
+        column
+        property="schema:description"
+      >
+        <p>
+          <strong>{{ job.description }}</strong>
+        </p>
+
+        <template
+          v-if="job.responsibilities || job.achievements"
+        >
+          <ul>
+            <template
+              v-for="item in job.responsibilities || job.achievements"
+              :key="item"
+            >
+              <li>{{ item }}</li>
+            </template>
+          </ul>
+        </template>
+      </TFlex>
+    </div>
+  </TEntry>
 </template>
 
 <script
-    lang="ts"
-    setup
+  lang="ts"
+  setup
 >
 import TFlex from '../templates/TFlex.vue'
+import MCurriculumEntryTitle from './MCurriculumEntryTitle.vue'
+import type { SchemaJob } from '../../types/website'
+import TEntry from '../templates/TEntry.vue'
 
 defineProps<{
-  date: string
+  job: SchemaJob
 }>()
 </script>
-
-<style lang="scss">
-@use "../../variables" as *;
-
-.MCurriculumEntry {
-  flex-wrap: nowrap;
-
-  &__date {
-    background-color: var(--color-background);
-    display: flex;
-    font-size: var(--fontsize-3);
-    font-weight: bold;
-    height: 100%;
-    padding: var(--spacer-md);
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-
-    @include desktop {
-      padding: 0;
-      top: var(--spacer-md);
-      width: 128px;
-    }
-
-    @media print {
-      left: unset;
-      position: relative;
-      top: unset;
-    }
-  }
-}
-</style>
