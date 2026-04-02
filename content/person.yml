@@ -6,6 +6,10 @@ givenName: "Barthélémy"
 familyName: "Bonhomme"
 pronouns: "He/Him"
 phoneticName: "/bɑːɹtɪ/"
+description: |
+  Software Engineer with 10+ years full-stack expertise and a proven track record leading teams, implementing best
+  practices and shipping production systems across various tech stacks. Passionate about building
+  maintainable software that scales with its requirements.
 languages:
   native:
     - name: "French"

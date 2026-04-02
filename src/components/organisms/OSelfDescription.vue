@@ -4,11 +4,7 @@
     column
     property="schema:description"
   >
-    <p>
-      Software Engineer with 10+ years full-stack expertise and a proven track record leading teams, implementing best
-      practices and shipping production systems across IoT, industry and public sector. Passionate about building
-      maintainable software that scales with its requirements.
-    </p>
+    <p>{{ person.description }}</p>
   </TFlex>
 </template>
 
@@ -17,6 +13,9 @@
   setup
 >
 import TFlex from '../templates/TFlex.vue'
+import { content } from '../../context/content.ts'
+
+const { person } = content
 </script>
 
 <style lang="scss">

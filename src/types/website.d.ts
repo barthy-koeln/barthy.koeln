@@ -55,6 +55,7 @@ export interface SchemaPersonData {
   alternateName: string
   phoneticName: string
   pronouns: string
+  description: string
   languages: {
     native: {
       name: string
