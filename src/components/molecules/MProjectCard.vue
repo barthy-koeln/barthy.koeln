@@ -7,7 +7,7 @@
   >
     <img
       :alt="project.image.alt"
-      :height="project.image.width"
+      :height="project.image.height"
       :src="project.image.src"
       :width="project.image.width"
       class="MProjectCard__image"
