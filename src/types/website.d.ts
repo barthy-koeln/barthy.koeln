@@ -4,7 +4,8 @@ export interface NavLink {
   label: string,
   target: string,
   url?: string
-  variant?: 'call' | 'write' | 'chat'
+  variant?: 'call' | 'write' | 'chat',
+  ariaLabel?: string
 }
 
 export interface SchemaProperty<T = string> {

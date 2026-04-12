@@ -1,5 +1,5 @@
 <template>
-  <nav class="ONavBar">
+  <div class="ONavBar">
     <img
       alt="barthy.koeln stylized logo in typical dark theme coding environment colors"
       class="ONavBar__logo"
@@ -11,9 +11,9 @@
     >
 
     <div class="ONavBar__nav">
-      <MNavList :links="contact"/>
+      <MNavList :links="contact" aria-label="Contact Links"/>
     </div>
-  </nav>
+  </div>
 </template>
 
 <script

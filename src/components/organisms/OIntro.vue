@@ -95,7 +95,7 @@
 
       <hr>
 
-      <ol class="OIntro__links">
+      <ol class="OIntro__links" aria-label="Social Links">
         <template
           v-for="link in socialLinks"
           :key="link.target"
@@ -118,6 +118,7 @@ import ASocialLink from '../atoms/ASocialLink.vue'
 import MNavListPrint from '../molecules/MNavListPrint.vue'
 import QNoPrint from '../quarks/QNoPrint.vue'
 import TFlex from '../templates/TFlex.vue'
+import MNavList from '../molecules/MNavList.vue'
 
 const { socialLinks, person } = content
 </script>

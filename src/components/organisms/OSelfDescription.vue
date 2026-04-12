@@ -1,18 +1,16 @@
 <template>
-  <TFlex
+  <p
     class="OSelfDescription"
-    column
     property="schema:description"
   >
-    <p>{{ person.description }}</p>
-  </TFlex>
+    {{ person.description }}
+  </p>
 </template>
 
 <script
   lang="ts"
   setup
 >
-import TFlex from '../templates/TFlex.vue'
 import { content } from '../../context/content.ts'
 
 const { person } = content
@@ -21,5 +19,7 @@ const { person } = content
 <style lang="scss">
 .OSelfDescription {
   font-size: var(--fontsize-3);
+  white-space: pre-line;
+  width: auto;
 }
 </style>

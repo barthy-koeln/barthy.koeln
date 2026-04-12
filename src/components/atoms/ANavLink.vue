@@ -3,6 +3,7 @@
     :data-variant="variant"
     :href="target"
     class="ANavLink"
+    :aria-label="ariaLabel"
   >
     <span v-html="label"/>
   </a>

@@ -2,12 +2,15 @@ contact:
   - label: Call
     target: tel:+4917630594643
     variant: call
+    ariaLabel: Call me (phone link)
   - label: Write
     target: mailto:post@barthy.koeln
     variant: write
+    ariaLabel: Email me (mailto link)
   - label: Chat
     target: https://wa.me/4917630594643
     variant: chat
+    ariaLabel: Contact me on WhatsApp (external link)
 contactPrint:
   - label: web
     target: https://barthy.koeln

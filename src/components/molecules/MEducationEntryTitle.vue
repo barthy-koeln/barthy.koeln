@@ -39,7 +39,7 @@ defineProps<{
   gap: var(--spacer-sm);
 
   &__title {
-    align-items: center;
+    align-items: start;
     display: flex;
     flex-direction: column;
     gap: var(--spacer-xs);

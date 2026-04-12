@@ -1,5 +1,5 @@
 <template>
-  <div class="OFloatingNav">
+  <nav class="OFloatingNav">
     <ol class="OFloatingNav__list">
       <template
         v-for="link in links"
@@ -10,7 +10,7 @@
         </li>
       </template>
     </ol>
-  </div>
+  </nav>
 </template>
 
 <script
@@ -29,6 +29,7 @@ const { links } = content
   background-color: var(--color-background);
   height: 100%;
   left: calc(-1 * var(--spacer-lg));
+  opacity: 0;
   padding: var(--spacer);
   position: absolute;
   top: 0;
@@ -37,13 +38,15 @@ const { links } = content
 
   &:focus,
   &:focus-within {
+    opacity: 1;
     transform: translateX(var(--spacer));
   }
 
-  @include desktop {
+  @include widescreen {
     &,
     &:focus,
     &:focus-within {
+      opacity: 1;
       transform: translateX(-100%);
     }
   }

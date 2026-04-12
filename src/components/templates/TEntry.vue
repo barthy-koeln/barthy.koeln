@@ -6,6 +6,16 @@
       class="TEntry__date"
       :resource="resource"
     >
+      <span
+        :property="isJob ? 'schema:startDate' : undefined"
+        :content="parsedStart.toISOString().split('T')[0]"
+      >
+        {{ formattedStart }}
+      </span>
+
+
+      &nbsp;&mdash;&nbsp;<br/>
+
       <template v-if="parsedEnd">
         <span
           :property="isJob ? 'schema:endDate' : 'schema:dateCreated'"
@@ -18,15 +28,6 @@
       <template v-else>
         <span>Present</span>
       </template>
-
-      &nbsp;&mdash;&nbsp;<br/>
-
-      <span
-        :property="isJob ? 'schema:startDate' : undefined"
-        :content="parsedStart.toISOString().split('T')[0]"
-      >
-        {{ formattedStart }}
-      </span>
     </div>
 
     <TFlex column>

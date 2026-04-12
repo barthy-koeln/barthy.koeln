@@ -16,6 +16,7 @@ core:
   - name: Frontend
     skills:
       - JavaScript
+      - TypeScript
       - HTML
       - CSS
   - name: Infrastructure
@@ -45,7 +46,6 @@ specialized:
           - OpenAPI Spec
     - name: Web Development
       skills:
-        - TypeScript
         - React.js
         - Vue.js
         - Three.js
@@ -63,6 +63,7 @@ emerging:
     skills:
       - Astro
       - PayloadCMS
+      - ARIA & WCAG
   - name: Gaming
     skills:
       - GDScript

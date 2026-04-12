@@ -6,6 +6,7 @@
     property="schema:sameAs"
     rel="nofollow noopener"
     target="_blank"
+    :aria-label="`Profile on ${link.variant} (external link)`"
   >
     <img
       v-if="link.variant"

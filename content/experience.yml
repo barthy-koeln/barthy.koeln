@@ -63,6 +63,25 @@ jobs:
       - "React"
       - "Next.js"
 
+  - employer: "Freelance"
+    roleName: "Web Development"
+    url: "https://barthy.koeln/#freelance"
+    startDate: "2014-01-01"
+    endDate: "2026-02-28"
+    description: "Development, hosting, and maintenance of interactive 3D experiences and CMS."
+    keywords: "Freelance, Web Development, Interactive Experiences"
+    occupation: "Web Development"
+    achievements:
+      - "Built serverless Shopify app serving ~140k monthly invocations"
+      - "Built 3D and VR experiences used in museum tours"
+    techStack:
+      - "Symfony PHP"
+      - "Vue.js"
+      - "TypeScript"
+      - "ThreeJS"
+      - "PayloadCMS"
+      - "Cloudflare Serverless"
+
   - employer: "VUCX GmbH"
     roleName: "Working Student Web Development"
     url: "https://vucx.de"
@@ -85,27 +104,7 @@ jobs:
     description: "Charitable online platform exchanging underground artists' music for donations to Doctors without Borders."
     keywords: "Non-profit, Web, Event-Planning"
     occupation: "Web Development"
-    achievements:
-      - "The project has collected and donated around 5.000€"
-      - "Developed a browsing, streaming and downloads website"
-      - "Produced several artist profile videos"
-      - "Organized several concerts and a festival"
     techStack:
       - "Symfony PHP"
       - "Vue.js"
       - "JavaScript"
-
-  - employer: "Freelance"
-    roleName: "Web Development"
-    url: "https://barthy.koeln/#freelance"
-    startDate: "2014-01-01"
-    endDate: "2026-02-28"
-    description: "Development, hosting, and maintenance of portfolio websites and interactive 3D experiences. Services: Consulting, 3D & VR hosting solutions, Hosting and maintenance."
-    keywords: "Freelance, Web Development, Interactive Experiences"
-    occupation: "Web Development"
-    techStack:
-      - "Symfony PHP"
-      - "Vue.js"
-      - "TypeScript"
-      - "ThreeJS"
-      - "PayloadCMS"
