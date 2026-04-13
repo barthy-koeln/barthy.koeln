@@ -12,7 +12,7 @@ core:
       - Symfony
       - Twig
       - nginx
-      - Apache Solr
+      - Apache Solr (+ Lucene, Elasticsearch)
   - name: Frontend
     skills:
       - JavaScript
@@ -55,7 +55,7 @@ emerging:
   - name: Cloud & DevOps
     skills:
       - AWS CDK
-      - AWS Lambda
+      - AWS Lambda, ECS, EC2
       - Terraform
       - Kubernetes
       - Caddy

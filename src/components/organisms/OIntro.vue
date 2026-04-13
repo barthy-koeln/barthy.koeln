@@ -1,13 +1,13 @@
 <template>
   <TFlex class="OIntro">
     <img
-      alt="Barthy and his white Maine-Coon and European Short-hair cat named Mew"
+      alt="Barthy and his norwegian forrest mix cat named Norbert"
       class="OIntro__img"
-      height="384"
+      height="385"
       loading="eager"
       property="schema:image"
-      src="/images/barthy_mew-small.webp"
-      title="Barthy & Mew the cat"
+      src="/images/barthy_and_norbert-small.webp"
+      title="Barthy & Norbert the cat"
       width="512"
     >
 
@@ -118,7 +118,6 @@ import ASocialLink from '../atoms/ASocialLink.vue'
 import MNavListPrint from '../molecules/MNavListPrint.vue'
 import QNoPrint from '../quarks/QNoPrint.vue'
 import TFlex from '../templates/TFlex.vue'
-import MNavList from '../molecules/MNavList.vue'
 
 const { socialLinks, person } = content
 </script>
