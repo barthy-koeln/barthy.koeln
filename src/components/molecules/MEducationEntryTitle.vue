@@ -7,7 +7,7 @@
         property="schema:recognizedBy"
         typeof="schema:CollegeOrUniversity"
       >
-      @ <a
+      at <a
         :href="edu.url"
         class="AEducationEntryTitle__org"
         property="schema:sameAs"

@@ -10,11 +10,12 @@ jobs:
     keywords: "Gaming, Sports Media, Publishing"
     occupation: "Software Engineering"
     responsibilities:
+      - "Coached 4 Software Engineer II"
       - "Modernized Content Publishing CMS with 14k+ existing entries"
       - "Implemented fast-paced online multiplayer game for handheld"
       - "Set up a knowledge exchange platform and filled it following the Diátaxis framework"
-      - "Coached of up to 3 Software Engineer II"
-      - "Created agentic review and visual regression tools"
+      - "Created agentic review processes in CI/CD"
+      - "Implemented error monitoring and visual regression tools"
     techStack:
       - "Next.js"
       - "React"
@@ -31,6 +32,7 @@ jobs:
     keywords: "IoT, Fleet Management"
     occupation: "Web Development"
     achievements:
+      - "Coached 3 junior/intermediate software engineers"
       - "Reduced page load times by 90% by enforcing strict coding guidelines, code reuse, and minimizing dependencies"
       - "Continuously improved e2e tests, reducing regression errors despite large refactoring"
       - "Empowered interdisciplinary exchange and planning through structured RFCs"
@@ -50,11 +52,11 @@ jobs:
     keywords: "Software, Media, CMS, CRM"
     occupation: "Software Engineering"
     responsibilities:
+      - "Led 3 junior and mid-level developers, one promoted to senior"
       - "Led large-scale migration of public sector data into custom GDPR-compliant CMS"
       - "Developed interactive and discoverable search engines for ~1M daily visitors"
       - "Migrated monolithic servers to modern containerized cloud deployments"
       - "Architected and implemented multi-tenant / multi-site distributed CMs"
-      - "Coached a developer now promoted to Software Engineer II"
       - "Consulted international clients and third-party agencies"
     techStack:
       - "Symfony PHP"
